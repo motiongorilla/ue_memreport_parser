@@ -1,0 +1,137 @@
+from collections import defaultdict
+
+
+def particle_mem_parser():
+    """Parser for DumpParticleMem"""
+
+
+def config_mem_parser():
+    """Parser for ConfigMem"""
+
+
+def dump_rt_parser(data) -> dict:
+    """Parser for r.DumpRenderTargetPoolMemory"""
+    import re
+
+    # Regular expression to parse the data lines
+    pattern = re.compile(r"\s*(\d+\.\d+MB)\s+(\d+x\s*\d+(?:x\s*\d+)?)\s+(\dmip\(s\))\s+([^\(]+)\s+\(([^)]+)\)\s+(Unused frames:\s*\d+)")
+
+    # Initialize the data dictionary
+    data_dict = {}
+
+    # Process each line
+    for line in data[1:-3]:
+        match = pattern.match(line)
+        if match:
+            size = match.group(1)
+            dimensions = match.group(2).replace(" ", "")
+            mips = match.group(3)
+            name = match.group(4).strip()
+            format_ = match.group(5)
+            unused_frames = match.group(6)
+
+            data_dict[name] = {"Size": size, "Dimensions": dimensions, "Mips": mips, "Format": format_, "Unused Frames": unused_frames}
+    return data_dict
+
+
+def list_texture_parser(data: list[str]) -> tuple[dict, dict]:
+    """Parser for ListTextures"""
+    import re
+
+    in_data: list[str] = data[2:-14]
+    columns_raw = data[1]
+    columns: list[str] = []
+
+    formatted_output: dict = defaultdict(list)
+
+    # Regular expression to match the first two columns and then split by commas
+    pattern = r"(MaxAllowedSize: Width x Height \(Size in KB, Authored Bias\)), (Current/InMem: Width x Height \(Size in KB\)), (.*)"
+    # Use re.match to apply the pattern
+    match = re.match(pattern, columns_raw)
+    if match:
+        # Extract the first two columns and the rest
+        columns = [match.group(1), match.group(2)] + match.group(3).split(", ")
+
+    for line in in_data:
+        pattern = re.compile(r",\s*(?![^()]*\))")
+        data_values = pattern.split(line)
+
+        # Append each value to the corresponding column list
+        for column, value in zip(columns, data_values):
+            formatted_output[column].append(value.strip())
+
+    # Pattern for summary
+    pattern = re.compile(r"Total (.+?) size: InMem= ([\d.]+ MB)  OnDisk= ([\d.]+ MB)(?:  Count=(\d+), CountApplicableToMin=(\d+))?")
+
+    # Initialize the summary dictionary
+    summary_lines = data[-14:]
+    summary = {}
+
+    # Process each line
+    for line in summary_lines:
+        match = pattern.match(line)
+        if match:
+            key = match.group(1)
+            in_mem = match.group(2)
+            on_disk = match.group(3)
+            count = match.group(4)
+            count_applicable_to_min = match.group(5)
+
+            summary[key] = {"InMem": in_mem, "OnDisk": on_disk, "Count": count, "CountApplicableToMin": count_applicable_to_min}
+
+    return formatted_output, summary
+
+
+def particle_system_parser():
+    """Parser for ListParticleSystems"""
+
+
+def class_parser(data: list[str], class_name: str) -> tuple[dict[str, list[str | float]], dict]:
+    """Parser for various Classes"""
+    import math
+
+    pure_class_name: str = class_name.replace("class=", "")
+    formated_data: dict[str, list[str | float]] = defaultdict(list)
+    class_summary: dict[str, float] = {}
+
+    columns: list[str] = []
+    is_data = False
+    for line in data[2:-1]:
+        if pure_class_name in line:
+            # line = line.replace(pure_class_name, "")
+            is_data = True
+        else:
+            is_data = False
+            if "Class" in line and "Count" in line:
+                break
+
+        if not is_data:
+            columns = line.split()
+            continue
+        else:
+            asset_data = line.split()[1:]
+            for i, col in enumerate(columns):
+                value = float(asset_data[i]) / 1024 if col != "Object" else asset_data[i]
+                if isinstance(value, float):
+                    value = math.ceil(value * 100) / 100
+                formated_data[col].append(value)
+
+    # building summary for the class
+    summary = data[-1].split()
+    class_summary["Objects"] = float(summary[0])
+    for entry in data[-1].split("(")[1].split("/"):
+        ln = entry.split(":")
+        name = ln[0].strip()
+        value = ln[1].strip()
+        if "|" in value:
+            ln2 = value.split("|")[1].split(":")
+            value = value.split("|")[0].strip()
+            name2 = ln2[0].strip()
+            class_summary[name2] = float(ln[-1].strip().replace("M", ""))
+
+        value = value.replace("M", "")
+        value = value.replace(")", "")
+
+        class_summary[name] = float(value)
+
+    return formated_data, class_summary

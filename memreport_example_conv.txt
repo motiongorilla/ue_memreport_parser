@@ -1,0 +1,998 @@
+Changelist: 35576357
+Config: Development
+Device Name: WindowsEditor
+Device Profile: None
+CommandLine Options: -AUTH_LOGIN=unused -AUTH_PASSWORD=a7936b8775da4ac4b24322d1abc82e8c -AUTH_TYPE=exchangecode -epicapp=UE_5.4 -epicenv=Prod -EpicPortal -epicusername=GorillaStyle -epicuserid=80ac75601cd84a288b7c5233e66db6ac -epiclocale=en -epicsandboxid=ue
+Time Since Boot: 151.92 Seconds
+
+MemReport: Begin command "DumpParticleMem"
+Particle Dynamic Memory Stats
+Type,Count,MaxCount,Mem(Bytes),MaxMem(Bytes),GTMem(Bytes),GTMemMax(Bytes)
+Total PSysComponents,0,0,0,0,0,0
+Total DynamicEmitters,0,0,0,0,0,0
+Sprite,0,0,0,0,0,0
+Mesh,0,0,0,0,0,0
+Beam,0,0,0,0,0,0
+Ribbon,0,0,0,0,0,0
+AnimTrail,0,0,0,0,0,0
+Untracked,0,0,0,0,0,0
+ParticleData,Total(Bytes),FMath::Max(Bytes)
+GameThread,0,0
+RenderThread,0,0
+Max wasted GT,0
+Largest single GT allocation,0
+Largest single RT allocation,0
+MemReport: End command "DumpParticleMem"
+
+MemReport: Begin command "ConfigMem"
+Config cache memory usage:
+                                                                                                FileName          NumBytes          MaxBytes
+                                                                                              KnownFiles           2020590           2136094
+        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini            567976            587414
+                              D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/Editor.ini            337722            352726
+                          D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ControlRig.ini            246996            248148
+               C:/Users/nizea/AppData/Local/UnrealEngine/5.4/Saved/Config/WindowsEditor/EditorLayout.ini            174630            178526
+                              D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/Compat.ini            133116            134220
+                             D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/Niagara.ini             89666             93850
+                           D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/Lightmass.ini             65062             67926
+                         D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/Interchange.ini             56982             61230
+             C:/Users/nizea/AppData/Local/UnrealEngine/5.4/Saved/Config/WindowsEditor/EditorSettings.ini             51256             58468
+          C:/Users/nizea/AppData/Local/UnrealEngine/5.4/Saved/Config/WindowsEditor/EditorKeyBindings.ini             33548             34964
+D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/UnrealInsightsSessionBrowserSettings.ini             31944             33424
+C:/Users/nizea/AppData/Local/UnrealEngine/5.4/Saved/Config/WindowsEditor/LocalizationServiceSettings.ini             29784             31264
+         D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/LocalizationServiceSettings.ini             29766             31246
+          D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/InternationalizationExport.ini             29524             31004
+           D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ObjectMixerSerializedData.ini             29282             30762
+           D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/TranslationPickerSettings.ini             29282             30762
+      C:/Users/nizea/AppData/Local/UnrealEngine/5.4/Saved/Config/WindowsEditor/SourceControlSettings.ini             28664             32564
+              D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/UnrealInsightsSettings.ini             28556             30036
+               D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/SourceControlSettings.ini             28310             29790
+                  D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/PIEPreviewSettings.ini             27588             29068
+                  D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/TemplateCategories.ini             27588             29068
+                    D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/GameplayTagsList.ini             27104             28584
+                        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/TemplateDefs.ini             26136             27616
+                              D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/Crypto.ini             24684             26164
+                    D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/DatasmithContent.ini             19432             20504
+                           D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/Metasound.ini             15962             17034
+            D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/EditorScriptingUtilities.ini             10688             11760
+                         D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ToolPresets.ini             10454             11526
+                                           D:/Unreal_Projects/UnrealLearningKit/Config/DefaultEngine.ini              9504              9800
+                       D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/EnhancedInput.ini              8254              9326
+                             D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/Paper2D.ini              8162              9234
+                           D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/Synthesis.ini              7238              8310
+                                                               ../../../Templates/TemplateCategories.ini              6950              7022
+                         D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/StructUtils.ini              6938              8074
+           D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/MetaHumanProjectUtilities.ini              6686              7950
+                               D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/IKRig.ini              6370              7506
+               D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/VariantManagerContent.ini              6362              7626
+                    D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/TraceDataFilters.ini              6048              7312
+       D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ContentBrowserClassDataSource.ini              5910              7110
+       D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ContentBrowserAssetDataSource.ini              5910              7110
+    D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/VisualStudioCodeSourceCodeAccess.ini              5880              7080
+        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ContentBrowserFileDataSource.ini              5856              7056
+        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/PortableObjectFileDataSource.ini              5824              7024
+        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/VisualStudioSourceCodeAccess.ini              5664              6864
+                      D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/TraceUtilities.ini              5664              6800
+                        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/GLTFExporter.ini              5660              6924
+                          D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/FullBodyIK.ini              5632              6896
+        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/AndroidDeviceProfileSelector.ini              5632              6832
+        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ExampleDeviceProfileSelector.ini              5632              6832
+        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/WindowsDeviceProfileSelector.ini              5632              6832
+               D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/BaseCharacterFXEditor.ini              5622              6822
+           D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/OnlineSubsystemGooglePlay.ini              5582              6782
+         D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/WorldPartitionHLODUtilities.ini              5562              6762
+         D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/MobileLauncherProfileWizard.ini              5562              6762
+          D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/LinuxDeviceProfileSelector.ini              5524              6724
+            D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/GeometryCollectionPlugin.ini              5496              6696
+           D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/LocationServicesBPLibrary.ini              5470              6670
+            D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/CodeLiteSourceCodeAccess.ini              5448              6648
+            D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/AnimationModifierLibrary.ini              5448              6648
+            D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/BlendSpaceMotionAnalysis.ini              5448              6648
+            D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/KDevelopSourceCodeAccess.ini              5448              6648
+            D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/IOSDeviceProfileSelector.ini              5416              6616
+             D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/SubversionSourceControl.ini              5394              6594
+              D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/MeshModelingToolsetExp.ini              5388              6588
+             D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ProceduralMeshComponent.ini              5362              6562
+              D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/EngineAssetDefinitions.ini              5292              6492
+              D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/LauncherChunkInstaller.ini              5292              6492
+               D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/CLionSourceCodeAccess.ini              5286              6486
+               D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/RiderSourceCodeAccess.ini              5286              6486
+               D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/PerforceSourceControl.ini              5286              6486
+               D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/XCodeSourceCodeAccess.ini              5286              6486
+                D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/N10XSourceCodeAccess.ini              5232              6432
+                D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/PlasticSourceControl.ini              5232              6432
+                D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/NullSourceCodeAccess.ini              5232              6432
+              D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/EnvironmentQueryEditor.ini              5228              6428
+                D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/GoogleCloudMessaging.ini              5200              6400
+                D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/CameraShakePreviewer.ini              5200              6400
+                 D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/LevelSequenceEditor.ini              5194              6394
+                D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/OnlineSubsystemUtils.ini              5184              6384
+                D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/MacGraphicsSwitching.ini              5184              6384
+                  D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/LocalizableMessage.ini              5172              6372
+                  D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/PythonScriptPlugin.ini              5172              6372
+                 D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/CustomMeshComponent.ini              5146              6346
+                 D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/MeshModelingToolset.ini              5146              6346
+                 D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/MobilePatchingUtils.ini              5146              6346
+                 D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/SignificanceManager.ini              5146              6346
+                 D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ActorLayerUtilities.ini              5146              6346
+                  D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/SequencerScripting.ini              5140              6340
+                  D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/OnlineSubsystemIOS.ini              5140              6340
+                 D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/OnlineSubsystemNull.ini              5130              6330
+                 D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/BlueprintHeaderView.ini              5130              6330
+                  D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/TextureFormatOodle.ini              5124              6324
+                  D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/PropertyAccessNode.ini              5124              6324
+                   D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/SkeletalReduction.ini              5118              6318
+                   D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ChaosSolverPlugin.ini              5118              6318
+                D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/PropertyAccessEditor.ini              5104              6304
+                  D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/AndroidMoviePlayer.ini              5092              6292
+                  D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/GeometryProcessing.ini              5092              6292
+                  D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/WindowsMoviePlayer.ini              5092              6292
+                  D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/GameplayTagsEditor.ini              5076              6276
+                  D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/SequencerAnimTools.ini              5076              6276
+                  D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/AssetManagerEditor.ini              5076              6276
+                   D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ControlRigModules.ini              5070              6270
+                    D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/OpenImageDenoise.ini              5064              6264
+                   D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/AndroidFileServer.ini              5038              6238
+                   D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/AndroidPermission.ini              5038              6238
+                    D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/TemplateSequence.ini              5032              6232
+                   D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/SpeedTreeImporter.ini              5022              6222
+                 D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/RenderGraphInsights.ini              5018              6218
+                 D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/FastBuildController.ini              5018              6218
+                    D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/AnimationSharing.ini              5016              6216
+                    D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/GitSourceControl.ini              5016              6216
+                    D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ControlRigSpline.ini              5016              6216
+                     D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/StudioTelemetry.ini              5010              6210
+                     D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ChaosUserDataPT.ini              5010              6210
+                     D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/AutomationUtils.ini              5010              6210
+                   D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/MediaPlayerEditor.ini              5006              6206
+                    D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ArchVisCharacter.ini              4984              6184
+                    D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/AppleMoviePlayer.ini              4984              6184
+                    D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/AudioSynesthesia.ini              4984              6184
+                    D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ChangelistReview.ini              4968              6168
+                    D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/MaterialAnalyzer.ini              4968              6168
+                    D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/CurveEditorTools.ini              4968              6168
+                    D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/EditorDebugTools.ini              4968              6168
+                     D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/DumpGPUServices.ini              4962              6162
+                     D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/AlembicImporter.ini              4962              6162
+                     D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/RenderDocPlugin.ini              4962              6162
+                   D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/NiagaraSimCaching.ini              4958              6158
+                      D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/PlatformCrypto.ini              4956              6156
+                    D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/MediaCompositing.ini              4952              6152
+                    D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/InterchangeTests.ini              4952              6152
+                     D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/AppleImageUtils.ini              4930              6130
+                     D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ChunkDownloader.ini              4930              6130
+                     D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/WebMMoviePlayer.ini              4930              6130
+                     D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/GameplayCameras.ini              4930              6130
+                   D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/InterchangeEditor.ini              4926              6126
+                      D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/VariantManager.ini              4924              6124
+                     D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/FacialAnimation.ini              4914              6114
+                     D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/OnlineSubsystem.ini              4914              6114
+                        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/XInputDevice.ini              4896              6096
+                         D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ObjectMixer.ini              4890              6090
+                      D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/CableComponent.ini              4876              6076
+                      D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ResonanceAudio.ini              4876              6076
+                      D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/InputDebugging.ini              4876              6076
+                       D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ActorSequence.ini              4870              6070
+                      D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ProxyLODPlugin.ini              4860              6060
+                      D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/OnlineServices.ini              4860              6060
+                      D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/DataValidation.ini              4860              6060
+                       D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/AnimationData.ini              4854              6054
+                       D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/UObjectPlugin.ini              4854              6054
+                        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ChaosCaching.ini              4848              6048
+                        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ChaosNiagara.ini              4848              6048
+                          D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/LightMixer.ini              4836              6036
+                        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/OodleNetwork.ini              4832              6032
+                       D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/GeometryCache.ini              4822              6022
+                       D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/PluginBrowser.ini              4806              6006
+                        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/PixWinPlugin.ini              4800              6000
+                        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/UdpMessaging.ini              4800              6000
+                        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/TcpMessaging.ini              4800              6000
+                         D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ChaosEditor.ini              4794              5994
+                         D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/CharacterAI.ini              4794              5994
+                         D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/BackChannel.ini              4794              5994
+                           D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/PlanarCut.ini              4782              5982
+                        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/AudioCapture.ini              4768              5968
+                        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/AudioWidgets.ini              4768              5968
+                        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/GeometryMode.ini              4752              5952
+                         D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/PluginUtils.ini              4746              5946
+                        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/AndroidMedia.ini              4736              5936
+                         D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/SoundFields.ini              4714              5914
+                       D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/CmdLinkServer.ini              4694              5894
+                       D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/XGEController.ini              4694              5894
+                          D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/CryptoKeys.ini              4644              5844
+                          D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/OnlineBase.ini              4644              5844
+                        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/WorldMetrics.ini              4640              5840
+                        D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/MeshPainting.ini              4640              5840
+                           D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ACLPlugin.ini              4638              5838
+                            D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/Dataflow.ini              4632              5832
+                            D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/Fracture.ini              4632              5832
+                          D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/MediaPlate.ini              4628              5828
+                           D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/GooglePAD.ini              4606              5806
+                           D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/WaveTable.ini              4606              5806
+                           D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/AssetTags.ini              4606              5806
+                           D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/WebMMedia.ini              4574              5774
+                               D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/Takes.ini              4550              5750
+                            D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/UVEditor.ini              4536              5736
+                          D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ChaosCloth.ini              4532              5732
+                           D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/AISupport.ini              4526              5726
+                            D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/WmfMedia.ini              4520              5720
+                            D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/AvfMedia.ini              4520              5720
+                            D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ImgMedia.ini              4520              5720
+                              D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/MsQuic.ini              4444              5644
+                               D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/RigVM.ini              4390              5590
+                             D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/ChaosVD.ini              4370              5570
+                              D:/Unreal_Projects/UnrealLearningKit/Saved/Config/WindowsEditor/Bridge.ini              4316              5516
+                                                             ../../../Engine/Config/ConsoleVariables.ini               642               714
+                                     D:/Unreal_Projects/UnrealLearningKit/Config/DefaultGameplayTags.ini               136               184
+                                                                                                   Total           5097804           5498354
+MemReport: End command "ConfigMem"
+
+MemReport: Begin command "r.DumpRenderTargetPoolMemory"
+Pooled Render Targets:
+   0.062MB    1x   1           1mip(s) HairLUT0 (B8G8R8A8) Unused frames: 0
+   0.008MB  768x   8           1mip(s) AsciiTexture (R8) Unused frames: 0
+  256.000MB 16384x2048    [  2]  1mip(s) Shadow.Virtual.PhysicalPagePool (R32_UINT) Unused frames: 0
+  42.688MB 8192x1024           7mip(s) Shadow.Virtual.HZBPhysicalPagePool (R32_FLOAT) Unused frames: 0
+  16.000MB 1024x1024x 16       1mip(s) DistanceFields.DistanceFieldBrickTexture (G8) Unused frames: 0
+   0.035MB   66x  64           1mip(s) SSProfiles (A16B16G16R16) Unused frames: 0
+   0.062MB  256x  64           1mip(s) SkyAtmosphere.TransmittanceLut (FloatRGB) Unused frames: 0
+   0.062MB   32x  32           1mip(s) SkyAtmosphere.MultiScatteredLuminanceLut (FloatRGB) Unused frames: 0
+   0.062MB    1x   1           1mip(s) SkyAtmosphere.DistantSkyLightLut (FloatRGB) Unused frames: 0
+   2.500MB   80x  64x 64       1mip(s) VolumetricFog.LightScattering (FloatRGBA) Unused frames: 0
+   0.125MB   32x  32x 16       1mip(s) SkyAtmosphere.CameraAPVolume0 (FloatRGBA) Unused frames: 0
+   2.000MB  512x 512           1mip(s) Lumen.Radiosity.ProbeSHBlueAtlas (FloatRGBA) Unused frames: 0
+   8.000MB 2048x2048           1mip(s) Lumen.RadianceCache.DepthProbeAtlasTexture (PF_R16F) Unused frames: 0
+  16.000MB 2048x2048           1mip(s) Lumen.RadianceCache.RadianceProbeAtlasTextureSource (FloatRGB) Unused frames: 0
+  20.250MB 2304x2304           1mip(s) Lumen.RadianceCache.FinalRadianceAtlas (FloatRGB) Unused frames: 0
+   2.000MB  512x 512           1mip(s) Lumen.Radiosity.ProbeSHGreenAtlas (FloatRGBA) Unused frames: 0
+   2.000MB 1024x1024           1mip(s) Lumen.RadianceCache.DepthProbeAtlasTexture (PF_R16F) Unused frames: 0
+   4.000MB 1024x1024           1mip(s) Lumen.RadianceCache.RadianceProbeAtlasTextureSource (FloatRGB) Unused frames: 0
+  21.000MB 2048x2048           3mip(s) Lumen.RadianceCache.FinalRadianceAtlas (FloatRGB) Unused frames: 0
+   2.000MB  512x 512           1mip(s) Lumen.Radiosity.ProbeSHRedAtlas (FloatRGBA) Unused frames: 0
+   9.000MB 1536x1536           1mip(s) Lumen.Radiosity.TraceRadianceAtlas (FloatRGB) Unused frames: 0
+   1.312MB   36x  36x144       1mip(s) GlobalDistanceField.PageTableMovableLayer (R32_UINT) Unused frames: 0
+   0.062MB    1x   1           1mip(s) EyeAdaptationTexture (A32B32G32R32F) Unused frames: 0
+  10.000MB 1276x1020           1mip(s) SceneDepthZ (DepthStencil) Unused frames: 0
+   0.062MB    1x   1           1mip(s) EyeAdaptationTexture (A32B32G32R32F) Unused frames: 0
+   0.125MB   32x  32x 32       1mip(s) CombineLUTs (A2B10G10R10) Unused frames: 0
+   5.000MB 1276x1020           1mip(s) Lumen.DepthHistory (R32_FLOAT) Unused frames: 0
+   1.250MB 1276x1020    [  1]  1mip(s) Lumen.Reflections.NumHistoryFramesAccumulated (G8) Unused frames: 0
+  32.000MB 4096x4096           1mip(s) Lumen.SceneDepth (G16) Unused frames: 0
+  16.000MB 4096x4096           1mip(s) Lumen.SceneAlbedo (BC7) Unused frames: 0
+  16.000MB 4096x4096           1mip(s) Lumen.SceneOpacity (G8) Unused frames: 0
+  16.000MB 4096x4096           1mip(s) Lumen.SceneNormal (BC5) Unused frames: 0
+  16.000MB 4096x4096           1mip(s) Lumen.SceneEmissive (BC6H) Unused frames: 0
+  64.000MB 4096x4096           1mip(s) Lumen.SceneDirectLighting (FloatR11G11B10) Unused frames: 0
+  64.000MB 4096x4096           1mip(s) Lumen.SceneIndirectLighting (FloatR11G11B10) Unused frames: 0
+  16.000MB 4096x4096           1mip(s) Lumen.SceneNumFramesAccumulatedAtlas (R8) Unused frames: 0
+  64.000MB 4096x4096           1mip(s) Lumen.SceneFinalLighting (FloatR11G11B10) Unused frames: 0
+   2.500MB 1276x1020    [  1]  1mip(s) Lumen.Reflections.AccumulatedResolveVariance (PF_R16F) Unused frames: 0
+   0.062MB    1x   1           1mip(s) Lumen.Radiosity.DummyTraceHitDistanceAtlas (PF_R16F) Unused frames: 0
+   1.312MB   36x  36x144       1mip(s) GlobalDistanceField.PageTableStationaryLayer (R32_UINT) Unused frames: 0
+  10.000MB 1276x1020    [  1]  1mip(s) Lumen.Reflections.SpecularIndirect (FloatRGBA) Unused frames: 0
+   1.250MB 1276x1020    [  1]  1mip(s) Lumen.ScreenProbeGather.NumHistoryFramesAccumulated (R8) Unused frames: 0
+   1.250MB 1276x1020    [  1]  1mip(s) Lumen.ScreenProbeGather.FastUpdateMode (R8) Unused frames: 0
+   5.000MB 1276x1020    [  1]  1mip(s) Lumen.ScreenProbeGather.RoughSpecularIndirect (FloatRGB) Unused frames: 0
+  10.000MB 1276x1020    [  1]  1mip(s) Lumen.ScreenProbeGather.DiffuseIndirect (FloatRGBA) Unused frames: 0
+   5.000MB 1276x1020           1mip(s) SceneColor (FloatRGB) Unused frames: 0
+   1.375MB 1024x 512          10mip(s) HZBFurthest (PF_R16F) Unused frames: 0
+   0.125MB   20x  14x 26       1mip(s) Lumen.TranslucencyVolume.SHLightingNewHistory0 (FloatRGBA) Unused frames: 0
+   0.062MB   20x  14x 26       1mip(s) Lumen.TranslucencyVolume.SHLightingNewHistory0 (FloatRGB) Unused frames: 0
+   0.062MB   40x  48           1mip(s) Lumen.ScreenProbeGather.ScreenProbeTranslatedWorldPosition (A32B32G32R32F) Unused frames: 0
+   0.062MB   40x  48           1mip(s) Lumen.ScreenProbeGather.ScreenProbeSceneDepth (R32_UINT) Unused frames: 0
+   0.500MB  320x 384           1mip(s) Lumen.ScreenProbeGather.ScreenProbeFilteredRadiance (FloatRGB) Unused frames: 0
+   0.250MB   72x  24x 24       1mip(s) Lumen.RadianceCache.RadianceProbeIndirectionTexture (R32_UINT) Unused frames: 0
+   2.250MB  192x  48x 48       1mip(s) Lumen.RadianceCache.RadianceProbeIndirectionTexture (R32_UINT) Unused frames: 0
+  56.000MB 1024x1024x 56       1mip(s) GlobalDistanceField.PageAtlas (R8) Unused frames: 0
+   7.000MB  512x 512x 28       1mip(s) GlobalDistanceField.CoverageAtlas (R8) Unused frames: 0
+   1.312MB   36x  36x144       1mip(s) GlobalDistanceField.PageTableCombined (R32_UINT) Unused frames: 0
+   1.000MB   63x  63x252       1mip(s) GlobalDistanceField.MipTexture (R8) Unused frames: 0
+   0.125MB  192x 104           1mip(s) SkyAtmosphere.SkyViewLut (FloatRGB) Unused frames: 1
+   0.062MB    1x   1           1mip(s) Lumen.Radiosity.DummyTraceHitDistanceAtlas (PF_R16F) Unused frames: 1
+   2.250MB  192x  48x 48       1mip(s) Lumen.RadianceCache.RadianceProbeIndirectionTexture (R32_UINT) Unused frames: 1
+   0.250MB   72x  24x 24       1mip(s) Lumen.RadianceCache.RadianceProbeIndirectionTexture (R32_UINT) Unused frames: 1
+   0.500MB  320x 384           1mip(s) Lumen.ScreenProbeGather.ScreenProbeFilteredRadiance (FloatRGB) Unused frames: 1
+   0.062MB   40x  48           1mip(s) Lumen.ScreenProbeGather.ScreenProbeSceneDepth (R32_UINT) Unused frames: 1
+   0.062MB   40x  48           1mip(s) Lumen.ScreenProbeGather.ScreenProbeTranslatedWorldPosition (A32B32G32R32F) Unused frames: 1
+   0.062MB   20x  14x 26       1mip(s) Lumen.TranslucencyVolume.SHLightingNewHistory0 (FloatRGB) Unused frames: 1
+   0.125MB   20x  14x 26       1mip(s) Lumen.TranslucencyVolume.SHLightingNewHistory0 (FloatRGBA) Unused frames: 1
+   1.375MB 1024x 512          10mip(s) HZBFurthest (PF_R16F) Unused frames: 1
+   5.000MB 1276x1020           1mip(s) SceneColor (FloatRGB) Unused frames: 1
+  10.000MB 1276x1020    [  1]  1mip(s) Lumen.ScreenProbeGather.DiffuseIndirect (FloatRGBA) Unused frames: 1
+   5.000MB 1276x1020    [  1]  1mip(s) Lumen.ScreenProbeGather.RoughSpecularIndirect (FloatRGB) Unused frames: 1
+   1.250MB 1276x1020    [  1]  1mip(s) Lumen.ScreenProbeGather.NumHistoryFramesAccumulated (R8) Unused frames: 1
+   1.250MB 1276x1020    [  1]  1mip(s) Lumen.ScreenProbeGather.FastUpdateMode (R8) Unused frames: 1
+  10.000MB 1276x1020    [  1]  1mip(s) Lumen.Reflections.SpecularIndirect (FloatRGBA) Unused frames: 1
+   2.500MB 1276x1020    [  1]  1mip(s) Lumen.Reflections.AccumulatedResolveVariance (PF_R16F) Unused frames: 1
+   1.250MB 1276x1020    [  1]  1mip(s) Lumen.Reflections.NumHistoryFramesAccumulated (G8) Unused frames: 1
+   5.000MB 1276x1020           1mip(s) Lumen.DepthHistory (R32_FLOAT) Unused frames: 1
+   2.500MB   80x  64x 64       1mip(s) VolumetricFog.LightScattering (FloatRGBA) Unused frames: 1
+   4.375MB  884x 604           1mip(s) DOF.TemporalAA (FloatRGBA) Unused frames: 1
+  20.000MB 1276x1020    [  4]  1mip(s) TSR.History.Guide (A2B10G10R10) Unused frames: 0
+   5.000MB 1276x1020    [  1]  1mip(s) TSR.History.Moire (R8G8B8A8) Unused frames: 0
+  34.688MB 1764x1208    [  4]  1mip(s) TSR.History.Color (FloatR11G11B10) Unused frames: 0
+   8.750MB 1764x1208    [  4]  1mip(s) TSR.History.Metadata (R8) Unused frames: 0
+   2.188MB 1764x1208           1mip(s) Final Luminance (R8) Unused frames: 0
+  32.812MB 3528x2416           1mip(s) Composite.PrimitivesDepthHistory (R32_FLOAT) Unused frames: 1
+   4.375MB  884x 604           1mip(s) DOF.TemporalAA (FloatRGBA) Unused frames: 0
+  32.812MB 3528x2416           1mip(s) Composite.PrimitivesDepthHistory (R32_FLOAT) Unused frames: 0
+1025.668MB total, 939.855MB used, 0.000MB unused, 87 render targets
+Deferred Render Targets:
+0.000MB Deferred total
+MemReport: End command "r.DumpRenderTargetPoolMemory"
+
+MemReport: Begin command "ListTextures"
+Listing all textures.
+MaxAllowedSize: Width x Height (Size in KB, Authored Bias), Current/InMem: Width x Height (Size in KB), Format, LODGroup, Name, Streaming, UnknownRef, VT, Usage Count, NumMips, Uncompressed
+3813x1192 (36288 KB, 0), 3813x1192 (36288 KB), PF_FloatRGBA, TEXTUREGROUP_ColorLookupTable, /Interchange/Utilities/New_LUT.New_LUT, NO, NO, NO, 0, 1, NO
+2048x2048 (32768 KB, 0), 2048x2048 (32768 KB), PF_FloatRGBA, TEXTUREGROUP_World, /Engine/EngineMaterials/DefaultBloomKernel.DefaultBloomKernel, NO, NO, NO, 0, 1, YES
+512x512 (16448 KB, 0), 512x512 (16448 KB), PF_FloatRGBA, TEXTUREGROUP_World, /Engine/MapTemplates/Sky/DaylightAmbientCubemap.DaylightAmbientCubemap, NO, NO, NO, 0, 10, YES
+4096x4096 (10944 KB, 0), 4096x4096 (10944 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Environment/Islands/Texture/T_FloatingIsland_Bot_L_ARM.T_FloatingIsland_Bot_L_ARM, YES, NO, NO, 17, 13, NO
+4096x4096 (10944 KB, 0), 4096x4096 (10944 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Environment/Islands/Texture/T_FloatingIsland_Bot_L_BC.T_FloatingIsland_Bot_L_BC, YES, NO, NO, 17, 13, NO
+2048x4096 (5504 KB, 0), 2048x4096 (5504 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/VFX/LightRay/T_vfx_lightray_card_01_O.T_vfx_lightray_card_01_O, YES, NO, NO, 4, 13, NO
+128x8192 (4096 KB, 0), 128x8192 (4096 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EngineMaterials/STBlueNoise_vec2_128x128x64.STBlueNoise_vec2_128x128x64, NO, NO, NO, 0, 1, YES
+2048x2048 (2752 KB, 0), 2048x2048 (2752 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/VFX/LightRay/T_vfx_Fog_01.T_vfx_Fog_01, YES, NO, NO, 4, 12, NO
+2048x2048 (2752 KB, 0), 2048x2048 (2752 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/VFX/LightRay/T_vfx_Light_Ray_01.T_vfx_Light_Ray_01, YES, NO, NO, 4, 12, NO
+128x8192 (1024 KB, 0), 128x8192 (1024 KB), PF_G8, TEXTUREGROUP_World, /Engine/EngineMaterials/STBlueNoise_scalar_128x128x64.STBlueNoise_scalar_128x128x64, NO, NO, NO, 0, 1, YES
+1024x1024 (704 KB, 0), 1024x1024 (704 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Floors/Texture/T_Kit_Floor_ARM.T_Kit_Floor_ARM, YES, NO, NO, 30, 11, NO
+1024x1024 (704 KB, 0), 1024x1024 (704 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Floors/Texture/T_Kit_Floor_BC.T_Kit_Floor_BC, YES, NO, NO, 30, 11, NO
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/AI/S_NavLink.S_NavLink, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/EmptyActor.EmptyActor, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/LightIcons/S_LightDirectional.S_LightDirectional, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/LightIcons/S_LightDirectionalMove.S_LightDirectionalMove, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/LightIcons/S_LightError.S_LightError, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/LightIcons/S_LightPoint.S_LightPoint, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/LightIcons/S_LightPointMove.S_LightPointMove, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/LightIcons/S_LightRect.S_LightRect, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/LightIcons/S_LightSpot.S_LightSpot, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/LightIcons/S_LightSpotMove.S_LightSpotMove, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/LightIcons/SkyLight.SkyLight, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/MatInstActSprite.MatInstActSprite, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/S_AtmosphericHeightFog.S_AtmosphericHeightFog, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/S_BoxReflectionCapture.S_BoxReflectionCapture, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/S_DecalActorIcon.S_DecalActorIcon, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/S_Emitter.S_Emitter, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/S_ExpoHeightFog.S_ExpoHeightFog, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/S_Note.S_Note, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/S_Player.S_Player, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/S_RadForce.S_RadForce, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/S_ReflActorIcon.S_ReflActorIcon, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/S_SkyAtmosphere.S_SkyAtmosphere, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/S_TargetPoint.S_TargetPoint, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/S_TextRenderActorIcon.S_TextRenderActorIcon, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/S_Thruster.S_Thruster, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/S_TriggerBox.S_TriggerBox, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/S_TriggerCapsule.S_TriggerCapsule, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/S_TriggerSphere.S_TriggerSphere, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/S_VectorFieldVol.S_VectorFieldVol, NO, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EditorResources/S_WindDirectional.S_WindDirectional, NO, NO, NO, 0, 9, YES
+512x512 (384 KB, 0), 512x512 (384 KB), PF_DXT5, TEXTUREGROUP_World, /Engine/EngineMaterials/T_Default_Material_Grid_M.T_Default_Material_Grid_M, YES, NO, NO, 4, 10, NO
+256x256 (384 KB, 0), 256x256 (384 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Niagara/Icons/S_ParticleSystem.S_ParticleSystem, YES, YES, NO, 0, 9, YES
+4096x1 (320 KB, 0), 4096x1 (320 KB), PF_B8G8R8A8, TEXTUREGROUP_Effects, /Engine/EditorResources/LevelGrid1DStripes.LevelGrid1DStripes, NO, NO, NO, 0, 13, NO
+256x256 (256 KB, 0), 256x256 (256 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EngineMaterials/PreintegratedSkinBRDF.PreintegratedSkinBRDF, NO, NO, NO, 0, 1, NO
+1152x128 (192 KB, 0), 1152x128 (192 KB), PF_DXT5, TEXTUREGROUP_UI, /Engine/EditorResources/SequenceRecorder/Countdown.Countdown, NO, NO, NO, 0, 1, NO
+512x512 (192 KB, 0), 512x512 (192 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/_Shared/Textures/T_Grass_Tile_D.T_Grass_Tile_D, YES, NO, NO, 127, 10, NO
+2048x2048 (2752 KB, 0), 512x512 (192 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Environment/Islands/Texture/T_FloatingIsland_Bot_M_ARM.T_FloatingIsland_Bot_M_ARM, YES, NO, NO, 19, 12, NO
+2048x2048 (2752 KB, 0), 512x512 (192 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Environment/Islands/Texture/T_FloatingIsland_Bot_M_BC.T_FloatingIsland_Bot_M_BC, YES, NO, NO, 19, 12, NO
+512x256 (128 KB, 0), 512x256 (128 KB), PF_G8, TEXTUREGROUP_UI, /Engine/EngineFonts/RobotoDistanceField.RobotoDistanceField:RobotoDistanceField_PageA, NO, NO, NO, 0, 1, YES
+512x512 (128 KB, 0), 512x512 (128 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EngineSky/VolumetricClouds/CloudWeatherTexture.CloudWeatherTexture, NO, NO, NO, 0, 1, NO
+64x64 (128 KB, 0), 64x64 (128 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EngineSky/VolumetricClouds/T_VolumeNoiseShape64.T_VolumeNoiseShape64, NO, NO, NO, 0, 1, NO
+128x1024 (92 KB, 0), 128x1024 (92 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/Functions/Engine_MaterialFunctions02/ExampleContent/DebugNumberStrip.DebugNumberStrip, NO, NO, NO, 0, 11, NO
+256x256 (88 KB, 0), 256x256 (88 KB), PF_BC5, TEXTUREGROUP_WorldNormalMap, /Engine/EngineMaterials/T_Default_Material_Grid_N.T_Default_Material_Grid_N, YES, NO, NO, 4, 9, NO
+128x128 (84 KB, 0), 128x128 (84 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EngineResources/DefaultTextureCube.DefaultTextureCube, NO, NO, NO, 0, 8, NO
+256x256 (64 KB, 0), 256x256 (64 KB), PF_DXT5, TEXTUREGROUP_World, /Engine/EditorResources/S_CameraShakeSource.S_CameraShakeSource, NO, NO, NO, 0, 1, NO
+256x256 (64 KB, 0), 256x256 (64 KB), PF_DXT5, TEXTUREGROUP_UI, /Engine/EditorResources/S_FTest.S_FTest, NO, NO, NO, 0, 1, NO
+256x256 (64 KB, 0), 256x256 (64 KB), PF_DXT5, TEXTUREGROUP_UI, /Engine/EditorResources/SmallFont.SmallFont:Texture2D_28, NO, NO, NO, 0, 1, NO
+256x256 (64 KB, 0), 256x256 (64 KB), PF_DXT5, TEXTUREGROUP_UI, /Engine/EngineFonts/SmallFont.SmallFont:Texture2D_28, NO, NO, NO, 0, 1, NO
+256x256 (48 KB, 0), 256x256 (48 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/_Shared/Textures/T_Grass_Tile_ARM.T_Grass_Tile_ARM, YES, NO, NO, 127, 9, NO
+1024x1024 (704 KB, 0), 256x256 (48 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Environment/Islands/Texture/T_FloatingIsland_Bot_S_ARM.T_FloatingIsland_Bot_S_ARM, YES, NO, NO, 25, 11, NO
+1024x1024 (704 KB, 0), 256x256 (48 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Environment/Islands/Texture/T_FloatingIsland_Bot_S_BC.T_FloatingIsland_Bot_S_BC, YES, NO, NO, 25, 11, NO
+10x10 (32 KB, 0), 10x10 (32 KB), PF_FloatRGBA, TEXTUREGROUP_World, /Engine/EngineDebugMaterials/VolumeToRender.VolumeToRender, NO, NO, NO, 0, 1, YES
+256x128 (32 KB, 0), 256x128 (32 KB), PF_DXT5, TEXTUREGROUP_UI, /Engine/EngineFonts/TinyFont.TinyFont:Texture2D_29, NO, NO, NO, 0, 1, NO
+64x64 (24 KB, 0), 64x64 (24 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EditorLandscapeResources/DefaultAlphaTexture.DefaultAlphaTexture, NO, NO, NO, 0, 7, NO
+512x512 (1408 KB, 0), 64x64 (24 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EditorMaterials/PreviewShadowIndicator.PreviewShadowIndicator, YES, NO, NO, 0, 10, YES
+256x256 (384 KB, 0), 64x64 (24 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EditorMaterials/TargetIcon.TargetIcon, YES, NO, NO, 0, 9, YES
+128x128 (88 KB, 0), 64x64 (24 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EditorResources/Bad.Bad, YES, NO, NO, 0, 8, YES
+128x128 (88 KB, 0), 64x64 (24 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EditorResources/S_Actor.S_Actor, YES, NO, NO, 0, 8, YES
+128x128 (88 KB, 0), 64x64 (24 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EditorResources/S_KBSJoint.S_KBSJoint, YES, NO, NO, 0, 8, YES
+128x128 (88 KB, 0), 64x64 (24 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EditorResources/S_KHinge.S_KHinge, YES, NO, NO, 0, 8, YES
+128x128 (88 KB, 0), 64x64 (24 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EditorResources/S_KPrismatic.S_KPrismatic, YES, NO, NO, 0, 8, YES
+128x128 (88 KB, 0), 64x64 (24 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EditorResources/S_LevelSequence.S_LevelSequence, YES, NO, NO, 0, 8, YES
+256x256 (384 KB, 0), 64x64 (24 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EditorResources/S_NavP.S_NavP, YES, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 64x64 (24 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EditorResources/S_Solver.S_Solver, YES, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 64x64 (24 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EditorResources/S_Terrain.S_Terrain, YES, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 64x64 (24 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EditorResources/S_Trigger.S_Trigger, YES, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 64x64 (24 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EditorResources/S_VolumetricCloud.S_VolumetricCloud, YES, NO, NO, 0, 9, YES
+256x256 (384 KB, 0), 64x64 (24 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EditorResources/SceneManager.SceneManager, YES, NO, NO, 0, 9, YES
+64x64 (24 KB, 0), 64x64 (24 KB), PF_B8G8R8A8, TEXTUREGROUP_Bokeh, /Engine/Engine_MI_Shaders/Textures/Bokeh.Bokeh, NO, NO, NO, 0, 7, NO
+64x64 (24 KB, 0), 64x64 (24 KB), PF_B8G8R8A8, TEXTUREGROUP_Bokeh, /Engine/EngineMaterials/DefaultBokeh.DefaultBokeh, NO, NO, NO, 0, 7, NO
+128x128 (24 KB, 0), 128x128 (24 KB), PF_BC5, TEXTUREGROUP_WorldNormalMap, /Game/LearningKit_Games/Assets/_Shared/Textures/T_Default_N.T_Default_N, YES, NO, NO, 28, 8, NO
+512x512 (1408 KB, 0), 64x64 (24 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /SpeedTreeImporter/SpeedTree9/game_wind_noise.game_wind_noise, YES, NO, NO, 0, 10, YES
+32x32 (16 KB, 0), 32x32 (16 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EngineSky/VolumetricClouds/T_VolumeNoiseErosion32.T_VolumeNoiseErosion32, NO, NO, NO, 0, 1, NO
+128x128 (16 KB, 0), 128x128 (16 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/_Shared/Textures/T_Default_ARM.T_Default_ARM, YES, NO, NO, 64, 8, NO
+128x128 (16 KB, 0), 128x128 (16 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/_Shared/Textures/T_Default_BC.T_Default_BC, YES, NO, NO, 35, 8, NO
+128x128 (16 KB, 0), 128x128 (16 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/_Shared/Textures/T_Default_E2.T_Default_E2, YES, NO, NO, 35, 8, NO
+64x64 (16 KB, 0), 64x64 (16 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Niagara/Icons/Modules/T_Icon_Particle_InfiniteLife.T_Icon_Particle_InfiniteLife, NO, NO, NO, 0, 1, YES
+64x64 (16 KB, 0), 64x64 (16 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Niagara/Icons/Modules/T_Icon_Solver_LimitAccel.T_Icon_Solver_LimitAccel, NO, NO, NO, 0, 1, YES
+64x64 (16 KB, 0), 64x64 (16 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Niagara/Icons/Modules/T_Icon_Solver_LimitSpeed.T_Icon_Solver_LimitSpeed, NO, NO, NO, 0, 1, YES
+64x64 (16 KB, 0), 64x64 (16 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Niagara/Icons/Modules/T_Icon_Solver_RotationalSolve.T_Icon_Solver_RotationalSolve, NO, NO, NO, 0, 1, YES
+4096x64 (256 KB, 0), 256x4 (12 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EngineSky/VolumetricClouds/T_NoiseShape64.T_NoiseShape64, YES, NO, NO, 0, 13, NO
+64x64 (12 KB, 0), 64x64 (12 KB), PF_G8, TEXTUREGROUP_World, /Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/LowResBlurredNoise.LowResBlurredNoise, NO, NO, NO, 52, 7, YES
+256x256 (48 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage.PSysThumbnail_NoImage, YES, NO, NO, 0, 9, NO
+128x128 (24 KB, 0), 64x64 (8 KB), PF_DXT5, TEXTUREGROUP_World, /Engine/EditorMaterials/ParticleSystems/PSysThumbnail_OOD.PSysThumbnail_OOD, YES, NO, NO, 0, 8, NO
+256x256 (48 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EditorMaterials/WidgetGridVertexColorMaterial.WidgetGridVertexColorMaterial, YES, NO, NO, 0, 9, NO
+64x64 (8 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EditorResources/MatineeCam_D.MatineeCam_D, NO, NO, NO, 1, 7, NO
+256x256 (88 KB, 0), 64x64 (8 KB), PF_DXT5, TEXTUREGROUP_World, /Engine/EditorResources/S_PortalActorIcon2.S_PortalActorIcon2, YES, NO, NO, 0, 9, NO
+2048x2048 (5504 KB, 0), 64x64 (8 KB), PF_DXT5, TEXTUREGROUP_World, /Engine/EditorResources/T_EditorHelp.T_EditorHelp, YES, NO, NO, 1, 12, NO
+512x1 (36 KB, 0), 64x1 (8 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EngineDebugMaterials/HeatmapGradient.HeatmapGradient, YES, NO, NO, 0, 10, NO
+32x32 (8 KB, 0), 32x32 (8 KB), PF_G8, TEXTUREGROUP_HierarchicalLOD, /Engine/EngineMaterials/BaseFlattenGrayscaleMap.BaseFlattenGrayScaleMap, NO, NO, NO, 0, 6, YES
+32x32 (8 KB, 0), 32x32 (8 KB), PF_G8, TEXTUREGROUP_HierarchicalLOD, /Engine/EngineMaterials/BaseFlattenGrayscaleMap_VT.BaseFlattenGrayscaleMap_VT, NO, NO, NO, 0, 6, YES
+1024x1024 (704 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EngineMaterials/DefaultDiffuse.DefaultDiffuse, YES, NO, NO, 0, 11, NO
+1024x1024 (1408 KB, 0), 64x64 (8 KB), PF_BC5, TEXTUREGROUP_WorldNormalMap, /Engine/EngineMaterials/DefaultNormal.DefaultNormal, YES, NO, NO, 0, 11, NO
+128x128 (16 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EngineMaterials/DefaultWhiteGrid.DefaultWhiteGrid, YES, NO, NO, 0, 8, NO
+512x512 (384 KB, 0), 64x64 (8 KB), PF_DXT5, TEXTUREGROUP_World, /Engine/EngineMaterials/Grid.Grid, YES, NO, NO, 0, 10, NO
+512x512 (384 KB, 0), 64x64 (8 KB), PF_BC5, TEXTUREGROUP_WorldNormalMap, /Engine/EngineMaterials/Grid_N.Grid_N, YES, NO, NO, 0, 10, NO
+512x512 (192 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EngineMaterials/InvalidLightmapSettings.InvalidLightmapSettings, YES, NO, NO, 0, 10, NO
+512x8 (8 KB, 0), 512x8 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EngineMaterials/MiniFont.MiniFont, NO, NO, NO, 0, 1, NO
+64x64 (8 KB, 3), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EngineMaterials/PaperDiffuse.PaperDiffuse, NO, NO, NO, 0, 10, NO
+64x64 (8 KB, 3), 64x64 (8 KB), PF_BC5, TEXTUREGROUP_WorldNormalMap, /Engine/EngineMaterials/PaperNormal.PaperNormal, NO, NO, NO, 0, 10, NO
+128x128 (16 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EngineResources/DefaultTexture.DefaultTexture, YES, NO, NO, 0, 8, NO
+32x32 (8 KB, 0), 32x32 (8 KB), PF_B8G8R8A8, TEXTUREGROUP_UI, /Engine/EngineResources/GradientTexture0.GradientTexture0, NO, NO, NO, 0, 6, YES
+1024x32 (36 KB, 0), 128x4 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EngineSky/VolumetricClouds/T_NoiseErosion.T_NoiseErosion, YES, NO, NO, 0, 11, NO
+128x128 (8 KB, 0), 128x128 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod.DebugNumberPeriod, NO, NO, NO, 0, 1, NO
+128x128 (16 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/flipbook.flipbook, YES, NO, NO, 0, 8, NO
+512x512 (192 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/VREditor/LaserPointer/VR_LaserPower_01.VR_LaserPower_01, YES, NO, NO, 38, 10, NO
+128x128 (16 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/_Shared/Textures/T_Default_E.T_Default_E, YES, NO, NO, 0, 8, NO
+128x128 (16 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/_Shared/Textures/T_Default_O.T_Default_O, YES, NO, NO, 0, 8, NO
+128x128 (16 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/_Shared/Textures/T_Default_RGB.T_Default_RGB, YES, NO, NO, 0, 8, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Gates/Texture/T_Forcefield_BC.T_Forcefield_BC, YES, NO, NO, 1, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Gates/Texture/T_Forcefield_E.T_Forcefield_E, YES, NO, NO, 1, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Gates/Texture/T_Forcefield_O.T_Forcefield_O, YES, NO, NO, 1, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Gates/Texture/T_Forcefield_RGB.T_Forcefield_RGB, YES, NO, NO, 1, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Gates/Texture/T_Gate_ARM.T_Gate_ARM, YES, NO, NO, 5, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Gates/Texture/T_Gate_BC.T_Gate_BC, YES, NO, NO, 5, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Platform/Texture/T_Platform_M_A_ARM.T_Platform_M_A_ARM, YES, NO, NO, 2, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Platform/Texture/T_Platform_M_A_BC.T_Platform_M_A_BC, YES, NO, NO, 2, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Ramps/Texture/T_Kit_Ramp_ARM.T_Kit_Ramp_ARM, YES, NO, NO, 1, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Ramps/Texture/T_Kit_Ramp_BC.T_Kit_Ramp_BC, YES, NO, NO, 1, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Roofs/Texture/T_Kit_Roof_Corner_In_ARM.T_Kit_Roof_Corner_In_ARM, YES, NO, NO, 3, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Roofs/Texture/T_Kit_Roof_Corner_In_BC.T_Kit_Roof_Corner_In_BC, YES, NO, NO, 3, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Roofs/Texture/T_Kit_Roof_Corner_Out_ARM.T_Kit_Roof_Corner_Out_ARM, YES, NO, NO, 5, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Roofs/Texture/T_Kit_Roof_Corner_Out_BC.T_Kit_Roof_Corner_Out_BC, YES, NO, NO, 5, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Roofs/Texture/T_Kit_Roof_Straight_ARM.T_Kit_Roof_Straight_ARM, YES, NO, NO, 7, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Roofs/Texture/T_Kit_Roof_Straight_BC.T_Kit_Roof_Straight_BC, YES, NO, NO, 7, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Stairs/Texture/T_Kit_Stairs_A_ARM.T_Kit_Stairs_A_ARM, YES, NO, NO, 2, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Stairs/Texture/T_Kit_Stairs_A_BC.T_Kit_Stairs_A_BC, YES, NO, NO, 2, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Stairs/Texture/T_Kit_Stairs_B_ARM.T_Kit_Stairs_B_ARM, YES, NO, NO, 1, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Stairs/Texture/T_Kit_Stairs_B_BC.T_Kit_Stairs_B_BC, YES, NO, NO, 1, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Walls/Texture/T_Kit_Wall_Diagonal_ARM.T_Kit_Wall_Diagonal_ARM, YES, NO, NO, 3, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Walls/Texture/T_Kit_Wall_Diagonal_BC.T_Kit_Wall_Diagonal_BC, YES, NO, NO, 3, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Walls/Texture/T_Kit_Wall_Door_ARM.T_Kit_Wall_Door_ARM, YES, NO, NO, 2, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Walls/Texture/T_Kit_Wall_Door_BC.T_Kit_Wall_Door_BC, YES, NO, NO, 2, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Walls/Texture/T_Kit_Wall_Straight_ARM.T_Kit_Wall_Straight_ARM, YES, NO, NO, 17, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Walls/Texture/T_Kit_Wall_Straight_BC.T_Kit_Wall_Straight_BC, YES, NO, NO, 17, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Walls/Texture/T_Kit_Wall_Window_ARM.T_Kit_Wall_Window_ARM, YES, NO, NO, 8, 12, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Architecture/Walls/Texture/T_Kit_Wall_Window_BC.T_Kit_Wall_Window_BC, YES, NO, NO, 8, 12, NO
+4096x4096 (10944 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Characters/Character/Texture/T_EpicCharacter_ARM.T_EpicCharacter_ARM, YES, NO, NO, 16, 13, NO
+4096x4096 (10944 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Characters/Character/Texture/T_EpicCharacter_BCE.T_EpicCharacter_BCE, YES, NO, NO, 16, 13, NO
+4096x4096 (10944 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Characters/Character/Texture/T_EpicCharacter_Colors.T_EpicCharacter_Colors, YES, NO, NO, 16, 13, NO
+4096x4096 (10944 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Environment/Clouds/Texture/T_Cloud_ARM.T_Cloud_ARM, YES, NO, NO, 0, 13, NO
+4096x4096 (10944 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Environment/Clouds/Texture/T_Cloud_BC.T_Cloud_BC, YES, NO, NO, 0, 13, NO
+4096x4096 (10944 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Environment/Clouds/Texture/T_Cloud_E.T_Cloud_E, YES, NO, NO, 0, 13, NO
+4096x4096 (10944 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Environment/Clouds/Texture/T_Cloud_RGB.T_Cloud_RGB, YES, NO, NO, 0, 13, NO
+128x128 (16 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Environment/Islands/Texture/T_FloatingIsland_Ground_ARM.T_FloatingIsland_Ground_ARM, YES, NO, NO, 0, 8, NO
+128x128 (16 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Environment/Islands/Texture/T_FloatingIsland_Ground_BC.T_FloatingIsland_Ground_BC, YES, NO, NO, 0, 8, NO
+1024x1024 (704 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/Buttons/Button_A/Texture/T_Button_A_ARM.T_Button_A_ARM, YES, NO, NO, 16, 11, NO
+1024x1024 (704 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/Buttons/Button_A/Texture/T_Button_A_BC.T_Button_A_BC, YES, NO, NO, 16, 11, NO
+1024x1024 (704 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/Buttons/Button_A/Texture/T_Button_A_E.T_Button_A_E, YES, NO, NO, 16, 11, NO
+1024x1024 (704 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/Buttons/Button_A/Texture/T_Button_A_RGB.T_Button_A_RGB, YES, NO, NO, 16, 11, NO
+1024x1024 (704 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/Collectibles/Common/Texture/T_Collectible_Common_ARM.T_Collectible_Common_ARM, YES, NO, NO, 2, 11, NO
+1024x1024 (704 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/Collectibles/Common/Texture/T_Collectible_Common_BC.T_Collectible_Common_BC, YES, NO, NO, 2, 11, NO
+1024x1024 (704 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/Levers/Lever_A/Texture/T_Lever_A_E.T_Lever_A_E, YES, NO, NO, 0, 11, NO
+2048x2048 (2752 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/Levers/Lever_A/Texture/T_Player_Lever_A_ARM.T_Player_Lever_A_ARM, YES, NO, NO, 4, 12, NO
+1024x1024 (704 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/Levers/Lever_A/Texture/T_Player_Lever_A_BC.T_Player_Lever_A_BC, YES, NO, NO, 4, 11, NO
+4096x4096 (10944 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/Powerups/Powerup_A/Texture/T_Powerup_A_ARM.T_Powerup_A_ARM, YES, NO, NO, 6, 13, NO
+4096x4096 (10944 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/Powerups/Powerup_A/Texture/T_Powerup_A_BC.T_Powerup_A_BC, YES, NO, NO, 6, 13, NO
+4096x4096 (10944 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/Powerups/Powerup_A/Texture/T_Powerup_A_E.T_Powerup_A_E, YES, NO, NO, 6, 13, NO
+4096x4096 (10944 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/Powerups/Powerup_A/Texture/T_Powerup_A_RGB.T_Powerup_A_RGB, YES, NO, NO, 6, 13, NO
+1024x1024 (704 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/PuzzlePieces/PuzzleCube_A/Texture/T_PuzzleCube_A_ARM.T_PuzzleCube_A_ARM, YES, NO, NO, 7, 11, NO
+1024x1024 (704 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/PuzzlePieces/PuzzleCube_A/Texture/T_PuzzleCube_A_BC.T_PuzzleCube_A_BC, YES, NO, NO, 7, 11, NO
+1024x1024 (704 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/PuzzlePieces/PuzzleCube_A/Texture/T_PuzzleCube_A_E.T_PuzzleCube_A_E, YES, NO, NO, 7, 11, NO
+1024x1024 (704 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/PuzzlePieces/PuzzleCube_A/Texture/T_PuzzleCube_A_RGB.T_PuzzleCube_A_RGB, YES, NO, NO, 7, 11, NO
+1024x1024 (704 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/PuzzlePieces/PuzzleSphere_A/Texture/T_PuzzleSphere_A_ARM.T_PuzzleSphere_A_ARM, YES, NO, NO, 4, 11, NO
+1024x1024 (704 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/PuzzlePieces/PuzzleSphere_A/Texture/T_PuzzleSphere_A_BC.T_PuzzleSphere_A_BC, YES, NO, NO, 4, 11, NO
+1024x1024 (704 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/PuzzlePieces/PuzzleSphere_A/Texture/T_PuzzleSphere_A_E.T_PuzzleSphere_A_E, YES, NO, NO, 4, 11, NO
+1024x1024 (704 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/Props/PuzzlePieces/PuzzleSphere_A/Texture/T_PuzzleSphere_A_RGB.T_PuzzleSphere_A_RGB, YES, NO, NO, 4, 11, NO
+512x512 (192 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/VFX/Clouds/NE_Clouds.NE_Clouds:ThumbnailTexture, YES, NO, NO, 0, 10, NO
+512x512 (192 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/VFX/Dependencies/Textures/T_Celebrate.T_Celebrate, YES, NO, NO, 0, 10, NO
+512x512 (192 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/VFX/Dependencies/Textures/T_WindRibbon.T_WindRibbon, YES, NO, NO, 0, 10, NO
+512x512 (192 KB, 0), 64x64 (8 KB), PF_DXT1, TEXTUREGROUP_World, /Game/LearningKit_Games/Assets/VFX/Emitters/Enviroment/NE_WindCurve.NE_WindCurve:Texture2D_0, YES, NO, NO, 0, 10, NO
+128x128 (24 KB, 0), 64x64 (8 KB), PF_DXT5, TEXTUREGROUP_World, /Paper2D/PlaceholderTextures/DummySpriteTexture.DummySpriteTexture, YES, NO, NO, 1, 8, NO
+32x32 (4 KB, 0), 32x32 (4 KB), PF_DXT5, TEXTUREGROUP_World, /Engine/EditorMaterials/Cross.Cross, NO, NO, NO, 0, 6, NO
+32x32 (4 KB, 0), 32x32 (4 KB), PF_DXT5, TEXTUREGROUP_World, /Engine/EditorMaterials/Tick.Tick, NO, NO, NO, 0, 6, NO
+16x16 (4 KB, 0), 16x16 (4 KB), PF_DXT5, TEXTUREGROUP_World, /Engine/EditorResources/BSPVertex.BSPVertex, NO, NO, NO, 0, 5, NO
+32x32 (4 KB, 0), 32x32 (4 KB), PF_DXT5, TEXTUREGROUP_UI, /Engine/EditorResources/SequenceRecorder/RecordingIndicator.RecordingIndicator, NO, NO, NO, 0, 1, NO
+32x32 (4 KB, 0), 32x32 (4 KB), PF_DXT1, TEXTUREGROUP_HierarchicalLOD, /Engine/EngineMaterials/BaseFlattenDiffuseMap.BaseFlattenDiffuseMap, NO, NO, NO, 0, 6, NO
+32x32 (4 KB, 0), 32x32 (4 KB), PF_DXT1, TEXTUREGROUP_HierarchicalLOD, /Engine/EngineMaterials/BaseFlattenDiffuseMap_VT.BaseFlattenDiffuseMap_VT, NO, NO, NO, 0, 6, NO
+32x32 (4 KB, 0), 32x32 (4 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EngineMaterials/BaseFlattenEmissiveMap.BaseFlattenEmissiveMap, NO, NO, NO, 0, 6, NO
+32x32 (4 KB, 0), 32x32 (4 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EngineMaterials/BaseFlattenEmissiveMap_VT.BaseFlattenEmissiveMap_VT, NO, NO, NO, 0, 6, NO
+32x32 (4 KB, 0), 32x32 (4 KB), PF_DXT1, TEXTUREGROUP_HierarchicalLOD, /Engine/EngineMaterials/BaseFlattenLinearColor.BaseFlattenLinearColor, NO, NO, NO, 0, 6, NO
+32x32 (4 KB, 0), 32x32 (4 KB), PF_DXT1, TEXTUREGROUP_HierarchicalLOD, /Engine/EngineMaterials/BaseFlattenLinearColor_VT.BaseFlattenLinearColor_VT, NO, NO, NO, 0, 6, NO
+1x1 (4 KB, 0), 1x1 (4 KB), PF_B8G8R8A8, TEXTUREGROUP_HierarchicalLOD, /Engine/EngineMaterials/BaseFlattenNormalMap.BaseFlattenNormalMap, NO, NO, NO, 0, 1, NO
+16x16 (4 KB, 0), 16x16 (4 KB), PF_BC5, TEXTUREGROUP_HierarchicalLOD, /Engine/EngineMaterials/BaseFlattenNormalMap_VT.BaseFlattenNormalMap_VT, NO, NO, NO, 0, 5, NO
+1x1 (4 KB, 0), 1x1 (4 KB), PF_FloatRGBA, TEXTUREGROUP_World, /Engine/EngineMaterials/Black_1x1_EXR_Texture_VT.Black_1x1_EXR_Texture_VT, NO, NO, NO, 0, 1, YES
+16x16 (4 KB, 0), 16x16 (4 KB), PF_DXT5, TEXTUREGROUP_World, /Engine/EngineMaterials/BlendFunc_DefBase.BlendFunc_DefBase, NO, NO, NO, 0, 5, NO
+16x16 (4 KB, 0), 16x16 (4 KB), PF_DXT5, TEXTUREGROUP_World, /Engine/EngineMaterials/BlendFunc_DefBlend.BlendFunc_DefBlend, NO, NO, NO, 0, 5, NO
+1x1 (4 KB, 0), 1x1 (4 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EngineMaterials/DefaultWhiteGrid_Low.DefaultWhiteGrid_Low, NO, NO, NO, 0, 1, NO
+64x64 (4 KB, 0), 64x64 (4 KB), PF_G8, TEXTUREGROUP_UI, /Engine/EngineMaterials/Good64x64TilingNoiseHighFreq.Good64x64TilingNoiseHighFreq, NO, NO, NO, 0, 1, YES
+2x2 (4 KB, 0), 2x2 (4 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EngineMaterials/WeightMapArrayPlaceholderTexture.WeightMapArrayPlaceholderTexture, NO, NO, NO, 0, 1, NO
+2x2 (4 KB, 0), 2x2 (4 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EngineMaterials/WeightMapPlaceholderTexture.WeightMapPlaceholderTexture, NO, NO, NO, 0, 2, NO
+32x32 (4 KB, 0), 32x32 (4 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EngineResources/Black.Black, NO, NO, NO, 0, 6, NO
+4x4 (4 KB, 0), 4x4 (4 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/EngineResources/DefaultVolumeTexture.DefaultVolumeTexture, NO, NO, NO, 0, 1, NO
+8x8 (4 KB, 0), 8x8 (4 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EngineResources/DefaultVolumeTexture2D.DefaultVolumeTexture2D, NO, NO, NO, 0, 4, NO
+64x64 (4 KB, 0), 64x64 (4 KB), PF_DXT5, TEXTUREGROUP_UI, /Engine/EngineResources/StreamingPauseIcon.StreamingPauseIcon, NO, NO, NO, 0, 1, NO
+32x32 (4 KB, 0), 32x32 (4 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture, NO, NO, NO, 0, 6, NO
+32x16 (4 KB, 0), 32x16 (4 KB), PF_DXT1, TEXTUREGROUP_World, /Engine/EngineSky/VolumetricClouds/CloudGradientTexture.CloudGradientTexture, NO, NO, NO, 0, 6, NO
+1x1 (4 KB, 0), 1x1 (4 KB), PF_FloatRGBA, TEXTUREGROUP_World, /Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/Black_1x1_EXR_Texture.Black_1x1_EXR_Texture, NO, NO, NO, 0, 1, YES
+8x8 (4 KB, 0), 8x8 (4 KB), PF_DXT5, TEXTUREGROUP_World, /Engine/MaterialTemplates/LayerBlends/T_DefaultMaskTexture.T_DefaultMaskTexture, NO, NO, NO, 0, 4, NO
+32x32 (4 KB, 0), 32x32 (4 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/Transient.Texture2D_0, NO, NO, NO, 0, 1, NO
+32x32 (4 KB, 0), 32x32 (4 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/Transient.Texture2D_1, NO, NO, NO, 0, 1, NO
+32x32 (4 KB, 0), 32x32 (4 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/Transient.Texture2D_2, NO, NO, NO, 0, 1, NO
+32x32 (4 KB, 0), 32x32 (4 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/Transient.Texture2D_3, NO, NO, NO, 0, 1, NO
+32x32 (4 KB, 0), 32x32 (4 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/Transient.Texture2D_4, NO, NO, NO, 0, 1, NO
+32x32 (4 KB, 0), 32x32 (4 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/Transient.Texture2D_5, NO, NO, NO, 0, 1, NO
+32x32 (4 KB, 0), 32x32 (4 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Engine/Transient.Texture2DArray_0, NO, NO, NO, 0, 1, NO
+1x1 (4 KB, 0), 1x1 (4 KB), PF_B8G8R8A8, TEXTUREGROUP_WorldNormalMap, /Interchange/gltf/Textures/T_Generic_N.T_Generic_N, NO, NO, NO, 0, 1, NO
+1x1 (4 KB, 0), 1x1 (4 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Interchange/gltf/Textures/T_White_Linear.T_White_Linear, NO, NO, NO, 0, 1, NO
+1x1 (4 KB, 0), 1x1 (4 KB), PF_B8G8R8A8, TEXTUREGROUP_World, /Interchange/gltf/Textures/T_White_srgb.T_White_srgb, NO, NO, NO, 0, 1, NO
+4x4 (4 KB, 0), 4x4 (4 KB), PF_DXT5, TEXTUREGROUP_World, /SpeedTreeImporter/SpeedTree9/Empty.Empty, NO, NO, NO, 0, 3, NO
+4x4 (4 KB, 0), 4x4 (4 KB), PF_DXT1, TEXTUREGROUP_WorldNormalMap, /SpeedTreeImporter/SpeedTree9/EmptyNormal.EmptyNormal, NO, NO, NO, 0, 3, NO
+1x1 (0 KB, 0), 1x1 (0 KB), PF_Unknown, TEXTUREGROUP_World, /Script/LevelSequence.Default__LevelSequenceMediaController:MediaComponent.MediaTexture, NO, NO, NO, 0, 1, NO
+Total size: InMem= 137.85 MB  OnDisk= 365.50 MB  Count=224, CountApplicableToMin=118
+Total PF_B8G8R8A8 size: InMem= 16.75 MB  OnDisk= 22.31 MB 
+Total PF_G8 size: InMem= 1.16 MB  OnDisk= 1.16 MB 
+Total PF_DXT1 size: InMem= 35.35 MB  OnDisk= 249.86 MB 
+Total PF_DXT5 size: InMem= 0.92 MB  OnDisk= 6.76 MB 
+Total PF_FloatRGBA size: InMem= 83.54 MB  OnDisk= 83.54 MB 
+Total PF_BC5 size: InMem= 0.14 MB  OnDisk= 1.87 MB 
+Total TEXTUREGROUP_World size: InMem= 90.01 MB  OnDisk= 315.93 MB 
+Total TEXTUREGROUP_WorldNormalMap size: InMem= 0.14 MB  OnDisk= 1.88 MB 
+Total TEXTUREGROUP_Effects size: InMem= 0.31 MB  OnDisk= 0.31 MB 
+Total TEXTUREGROUP_UI size: InMem= 11.86 MB  OnDisk= 11.86 MB 
+Total TEXTUREGROUP_ColorLookupTable size: InMem= 35.44 MB  OnDisk= 35.44 MB 
+Total TEXTUREGROUP_Bokeh size: InMem= 0.05 MB  OnDisk= 0.05 MB 
+Total TEXTUREGROUP_HierarchicalLOD size: InMem= 0.04 MB  OnDisk= 0.04 MB 
+MemReport: End command "ListTextures"
+
+MemReport: Begin command "ListParticleSystems -alphasort"
+ParticleSystems:
+Size,Name,PSysSize,ModuleSize,ComponentSize,ComponentCount,CompResSize,CompTrueResSize
+    185440,/Game/LearningKit_Games/Assets/VFX/Clouds/VFX_MeshClouds_Base.VFX_MeshClouds_Base,119448,0,30120,8,35872,7168
+    169896,/Game/LearningKit_Games/Assets/VFX/Emitters/Enviroment/NS_WindCurveSystem.NS_WindCurveSystem,155444,0,6628,2,7824,896
+     47444,/Game/LearningKit_Games/Assets/VFX/LightRay/vfx_lightray_card_01_P1_soft1_sea.vfx_lightray_card_01_P1_soft1_sea,848,1740,17448,4,27408,9960
+    122686,/Game/LearningKit_Games/Assets/VFX/Pollen/VFX_Pollen.VFX_Pollen,98472,0,11002,3,13212,2688
+   2401086,/Game/LearningKit_Games/Assets/VFX/Pollen/vfx_pollen_magic_camera_fade.vfx_pollen_magic_camera_fade,848,2476,737382,3,1660380,922998
+   2926552,Total,375060,4216,802580,20,1744696,943710
+MemReport: End command "ListParticleSystems -alphasort"
+
+MemReport: Begin command "obj list class=SoundWave -alphasort"
+Obj List: class=SoundWave -alphasort
+Objects:
+
+                                                                                                                                      Object      NumKB      MaxKB   ResExcKB  ResExcDedSysKB  ResExcDedVidKB     ResExcUnkKB
+                                            SoundWave /Engine/VREditor/Sounds/UI/Drop_Item_From_ContentBrowser.Drop_Item_From_ContentBrowser       1.95       1.97       1.98            1.98            0.00            0.00
+                                                              SoundWave /Engine/VREditor/Sounds/UI/Gizmo_Handle_Clicked.Gizmo_Handle_Clicked       1.95       1.97       1.98            1.98            0.00            0.00
+                                                                            SoundWave /Engine/VREditor/Sounds/UI/Object_PickUp.Object_PickUp       1.95       1.97       1.98            1.98            0.00            0.00
+                                            SoundWave /Engine/VREditor/Sounds/UI/Object_Snaps_To_Another_Actor.Object_Snaps_To_Another_Actor       1.95       1.97       1.98            1.98            0.00            0.00
+                                                              SoundWave /Engine/VREditor/Sounds/UI/Object_Snaps_To_Grid.Object_Snaps_To_Grid       1.95       1.97       1.98            1.98            0.00            0.00
+                                                                              SoundWave /Engine/VREditor/Sounds/UI/Scaling_Down.Scaling_Down       1.95       1.97       1.98            1.98            0.00            0.00
+                                                                                  SoundWave /Engine/VREditor/Sounds/UI/Scaling_Up.Scaling_Up       1.95       1.97       1.98            1.98            0.00            0.00
+                                                                    SoundWave /Engine/VREditor/Sounds/UI/Selection_Changes.Selection_Changes       1.95       1.97       1.98            1.98            0.00            0.00
+
+                                                                                                Class    Count      NumKB      MaxKB   ResExcKB  ResExcDedSysKB  ResExcDedVidKB     ResExcUnkKB
+                                                                                            SoundWave        8      15.62      15.75      15.84           15.84            0.00            0.00
+
+8 Objects (Total: 0.015M / Max: 0.015M / Res: 0.015M | ResDedSys: 0.015M / ResDedVid: 0.000M / ResUnknown: 0.000M)
+MemReport: End command "obj list class=SoundWave -alphasort"
+
+MemReport: Begin command "obj list class=SkeletalMesh -alphasort"
+Obj List: class=SkeletalMesh -alphasort
+Objects:
+
+                                                                                                                                      Object      NumKB      MaxKB   ResExcKB  ResExcDedSysKB  ResExcDedVidKB     ResExcUnkKB
+                                                   SkeletalMesh /Engine/Tutorial/SubEditors/TutorialAssets/Character/TutorialTPP.TutorialTPP     848.03     848.63     198.77           24.97            0.00          173.80
+                 SkeletalMesh /Game/LearningKit_Games/Assets/Characters/Character/Mesh/SK_EpicCharacter_Optimized.SK_EpicCharacter_Optimized    2819.51    3317.60     586.13           30.72            0.00          555.41
+
+                                                                                                Class    Count      NumKB      MaxKB   ResExcKB  ResExcDedSysKB  ResExcDedVidKB     ResExcUnkKB
+                                                                                         SkeletalMesh        2    3667.53    4166.23     784.90           55.69            0.00          729.21
+
+2 Objects (Total: 3.582M / Max: 4.069M / Res: 0.767M | ResDedSys: 0.054M / ResDedVid: 0.000M / ResUnknown: 0.712M)
+MemReport: End command "obj list class=SkeletalMesh -alphasort"
+
+MemReport: Begin command "obj list class=StaticMesh -alphasort"
+Obj List: class=StaticMesh -alphasort
+Objects:
+
+                                                                                                                                      Object      NumKB      MaxKB   ResExcKB  ResExcDedSysKB  ResExcDedVidKB     ResExcUnkKB
+                                                            StaticMesh /Engine/ArtTools/RenderToTexture/Meshes/S_1_Unit_Plane.S_1_Unit_Plane       3.31       3.41       5.04            2.32            0.00            2.72
+                                                                                                    StaticMesh /Engine/BasicShapes/Cone.Cone       7.90       7.99      20.74            5.84            0.00           14.90
+                                                                                                    StaticMesh /Engine/BasicShapes/Cube.Cube       3.59       3.69       9.89            5.84            0.00            4.05
+                                                                                            StaticMesh /Engine/BasicShapes/Cylinder.Cylinder       6.54       6.64      31.14            5.84            0.00           25.30
+                                                                                                  StaticMesh /Engine/BasicShapes/Plane.Plane       3.59       3.69       3.66            2.32            0.00            1.34
+                                                                                                StaticMesh /Engine/BasicShapes/Sphere.Sphere       3.53       3.62      50.42            5.84            0.00           44.57
+                                                               StaticMesh /Engine/EditorLandscapeResources/SplineEditorMesh.SplineEditorMesh       3.31       3.41       6.32            2.32            0.00            4.00
+                                                                                StaticMesh /Engine/EditorMeshes/Camera/SM_CineCam.SM_CineCam       3.42       3.52     301.72            2.32            0.00          299.41
+                                                                      StaticMesh /Engine/EditorMeshes/Camera/SM_CraneRig_Arm.SM_CraneRig_Arm       3.31       3.41       4.49            2.32            0.00            2.17
+                                                                    StaticMesh /Engine/EditorMeshes/Camera/SM_CraneRig_Base.SM_CraneRig_Base       3.31       3.41      56.46            3.83            0.00           52.63
+                                                                    StaticMesh /Engine/EditorMeshes/Camera/SM_CraneRig_Body.SM_CraneRig_Body       3.31       3.41      53.96            3.32            0.00           50.64
+                                                                  StaticMesh /Engine/EditorMeshes/Camera/SM_CraneRig_Mount.SM_CraneRig_Mount       3.31       3.41      13.44            2.32            0.00           11.12
+                                                                    StaticMesh /Engine/EditorMeshes/Camera/SM_RailRig_Mount.SM_RailRig_Mount       3.31       3.41      85.77            2.32            0.00           83.45
+                                                                    StaticMesh /Engine/EditorMeshes/Camera/SM_RailRig_Track.SM_RailRig_Track       3.31       3.41      70.64            2.32            0.00           68.33
+                                                                                       StaticMesh /Engine/EditorMeshes/EditorCube.EditorCube       3.89       3.98       8.02            5.84            0.00            2.17
+                                                                               StaticMesh /Engine/EditorMeshes/EditorCylinder.EditorCylinder       4.27       4.36      31.57            5.84            0.00           25.73
+                                                                                     StaticMesh /Engine/EditorMeshes/EditorPlane.EditorPlane       3.31       3.41       6.55            3.83            0.00            2.72
+                                                                             StaticMesh /Engine/EditorMeshes/EditorSkySphere.EditorSkySphere       3.34       3.91     259.34           64.30            0.00          195.04
+                                                                                   StaticMesh /Engine/EditorMeshes/EditorSphere.EditorSphere       3.53       3.62     205.74           15.42            0.00          190.32
+                                                                                 StaticMesh /Engine/EditorMeshes/MatineeCam_SM.MatineeCam_SM       3.31       3.41     211.89            2.32            0.00          209.58
+                                                                 StaticMesh /Engine/EditorMeshes/PlanarReflectionPlane.PlanarReflectionPlane       3.31       3.41     105.60           14.41            0.00           91.19
+                                                                                               StaticMesh /Engine/EngineMeshes/Sphere.Sphere       3.53       3.62      39.62           15.42            0.00           24.20
+                                                                    StaticMesh /Engine/VREditor/SnapGrid/SnapGridPlaneMesh.SnapGridPlaneMesh       3.31       3.41       4.63            1.82            0.00            2.82
+                                                              StaticMesh /Engine/VREditor/TransformGizmo/BoundingBoxCorner.BoundingBoxCorner       4.31       4.41      12.40            2.32            0.00           10.09
+                                                                  StaticMesh /Engine/VREditor/TransformGizmo/BoundingBoxEdge.BoundingBoxEdge       4.03       4.12       6.43            2.32            0.00            4.11
+                                                    StaticMesh /Engine/VREditor/TransformGizmo/PlaneTranslationHandle.PlaneTranslationHandle       4.83       4.92      10.24            2.32            0.00            7.92
+                                                            StaticMesh /Engine/VREditor/TransformGizmo/RotationHandleFull.RotationHandleFull       5.17       5.27     186.42            3.83            0.00          182.59
+                                                  StaticMesh /Engine/VREditor/TransformGizmo/RotationHandleIndicator.RotationHandleIndicator       5.03       5.12      15.89            2.32            0.00           13.58
+                                                      StaticMesh /Engine/VREditor/TransformGizmo/RotationHandleQuarter.RotationHandleQuarter       5.12       5.22      52.33            2.32            0.00           50.02
+                                                              StaticMesh /Engine/VREditor/TransformGizmo/SM_Sequencer_Node.SM_Sequencer_Node       4.38       4.47       6.83            2.32            0.00            4.52
+                                        StaticMesh /Engine/VREditor/TransformGizmo/StartRotationHandleIndicator.StartRotationHandleIndicator       5.22       5.31      28.02            2.32            0.00           25.70
+                                            StaticMesh /Engine/VREditor/TransformGizmo/TransformGizmoFreeRotation.TransformGizmoFreeRotation       5.12       5.22    1837.66            2.32            0.00         1835.34
+                                                        StaticMesh /Engine/VREditor/TransformGizmo/TranslateArrowHandle.TranslateArrowHandle       5.03       5.12      14.25            2.32            0.00           11.93
+                                                            StaticMesh /Engine/VREditor/TransformGizmo/UniformScaleHandle.UniformScaleHandle       5.16       5.25       8.86            2.32            0.00            6.55
+                                                               StaticMesh /Game/Hour_of_Code/Static_Meshes/MA_setDressing_c.MA_setDressing_c       9.03       9.12     268.93           50.05            0.00          218.88
+                                                     StaticMesh /Game/LearningKit_Games/Assets/Architecture/Floors/SM_Kit_Floor.SM_Kit_Floor       7.97       8.11     111.10           36.77            0.00           74.34
+                                                    StaticMesh /Game/LearningKit_Games/Assets/Architecture/Gates/SM_Large_Gate.SM_Large_Gate       8.86       9.00     348.44           53.64            0.00          294.80
+                                              StaticMesh /Game/LearningKit_Games/Assets/Architecture/Gates/SM_Large_Gate_01.SM_Large_Gate_01      10.97      11.11     483.27           31.05            0.00          452.23
+                                        StaticMesh /Game/LearningKit_Games/Assets/Architecture/Gates/SM_Large_Gate_Frame.SM_Large_Gate_Frame       6.20       6.34     155.30           45.75            0.00          109.55
+                                             StaticMesh /Game/LearningKit_Games/Assets/Architecture/Platform/SM_Platform_M_A.SM_Platform_M_A       6.33       6.47     226.45           51.74            0.00          174.71
+                                                        StaticMesh /Game/LearningKit_Games/Assets/Architecture/Ramps/SM_Kit_Ramp.SM_Kit_Ramp       4.78       4.92     181.74           54.69            0.00          127.05
+                                    StaticMesh /Game/LearningKit_Games/Assets/Architecture/Roofs/SM_Kit_Roof_Corner_In.SM_Kit_Roof_Corner_In       6.52       6.66     141.07           49.01            0.00           92.06
+                                  StaticMesh /Game/LearningKit_Games/Assets/Architecture/Roofs/SM_Kit_Roof_Corner_Out.SM_Kit_Roof_Corner_Out       5.05       5.14     129.25           83.92            0.00           45.33
+                                      StaticMesh /Game/LearningKit_Games/Assets/Architecture/Roofs/SM_Kit_Roof_Straight.SM_Kit_Roof_Straight       4.47       4.56      86.41           47.43            0.00           38.98
+                                               StaticMesh /Game/LearningKit_Games/Assets/Architecture/Stairs/SM_Kit_Stairs_A.SM_Kit_Stairs_A       6.33       6.47     213.09           57.76            0.00          155.33
+                                               StaticMesh /Game/LearningKit_Games/Assets/Architecture/Stairs/SM_Kit_Stairs_B.SM_Kit_Stairs_B       6.33       6.47     143.75           51.99            0.00           91.76
+                                      StaticMesh /Game/LearningKit_Games/Assets/Architecture/Walls/SM_Kit_Wall_Diagonal.SM_Kit_Wall_Diagonal       4.69       4.83      47.00           15.08            0.00           31.92
+                                              StaticMesh /Game/LearningKit_Games/Assets/Architecture/Walls/SM_Kit_Wall_Door.SM_Kit_Wall_Door       5.61       5.75     261.83           44.99            0.00          216.84
+                                      StaticMesh /Game/LearningKit_Games/Assets/Architecture/Walls/SM_Kit_Wall_Straight.SM_Kit_Wall_Straight       4.48       4.62     118.74           43.83            0.00           74.91
+                                          StaticMesh /Game/LearningKit_Games/Assets/Architecture/Walls/SM_Kit_Wall_Window.SM_Kit_Wall_Window       4.77       4.91     268.22           41.68            0.00          226.55
+                                                          StaticMesh /Game/LearningKit_Games/Assets/Environment/Clouds/SM_Cloud_A.SM_Cloud_A       4.20       4.34     611.42          100.76            0.00          510.66
+                                                          StaticMesh /Game/LearningKit_Games/Assets/Environment/Clouds/SM_Cloud_C.SM_Cloud_C       4.20       4.34     715.94          100.36            0.00          615.58
+                                                          StaticMesh /Game/LearningKit_Games/Assets/Environment/Clouds/SM_Cloud_D.SM_Cloud_D       4.20       4.34     758.59          103.42            0.00          655.17
+                                                     StaticMesh /Game/LearningKit_Games/Assets/Environment/Foliage/SM_Clover_01.SM_Clover_01       3.31       3.41       7.00            2.32            0.00            4.68
+                                                     StaticMesh /Game/LearningKit_Games/Assets/Environment/Foliage/SM_Clover_02.SM_Clover_02       3.31       3.41       6.64            2.32            0.00            4.33
+                                                     StaticMesh /Game/LearningKit_Games/Assets/Environment/Foliage/SM_Clover_03.SM_Clover_03       3.31       3.41       6.82            2.32            0.00            4.50
+                                         StaticMesh /Game/LearningKit_Games/Assets/Environment/Foliage/SM_CloverFlower_01.SM_CloverFlower_01       3.31       3.41       8.38            2.82            0.00            5.56
+                                         StaticMesh /Game/LearningKit_Games/Assets/Environment/Foliage/SM_CloverFlower_02.SM_CloverFlower_02       3.31       3.41       5.24            2.32            0.00            2.92
+                                         StaticMesh /Game/LearningKit_Games/Assets/Environment/Foliage/SM_CloverFlower_03.SM_CloverFlower_03       3.31       3.41       5.59            2.32            0.00            3.27
+                                         StaticMesh /Game/LearningKit_Games/Assets/Environment/Foliage/SM_Flower_Daisy_01.SM_Flower_Daisy_01       3.61       3.72      11.06            1.81            0.00            9.25
+                                         StaticMesh /Game/LearningKit_Games/Assets/Environment/Foliage/SM_Flower_Daisy_02.SM_Flower_Daisy_02       3.61       3.72      11.06            1.81            0.00            9.25
+                                         StaticMesh /Game/LearningKit_Games/Assets/Environment/Foliage/SM_Flower_Daisy_03.SM_Flower_Daisy_03       3.31       3.41       8.61            2.32            0.00            6.29
+                                                 StaticMesh /Game/LearningKit_Games/Assets/Environment/Foliage/SM_Grass_Dk_01.SM_Grass_Dk_01       3.31       3.41      10.02            2.32            0.00            7.71
+                                                 StaticMesh /Game/LearningKit_Games/Assets/Environment/Foliage/SM_Grass_Dk_02.SM_Grass_Dk_02       3.31       3.41      12.82            2.32            0.00           10.51
+                                                 StaticMesh /Game/LearningKit_Games/Assets/Environment/Foliage/SM_Grass_Dk_03.SM_Grass_Dk_03       3.31       3.41      22.17            2.82            0.00           19.35
+                                                 StaticMesh /Game/LearningKit_Games/Assets/Environment/Foliage/SM_Grass_Dk_04.SM_Grass_Dk_04       3.31       3.41      33.77            2.82            0.00           30.95
+                                                 StaticMesh /Game/LearningKit_Games/Assets/Environment/Foliage/SM_Grass_Dk_05.SM_Grass_Dk_05       3.31       3.41      33.83            2.82            0.00           31.01
+                                                 StaticMesh /Game/LearningKit_Games/Assets/Environment/Foliage/SM_Grass_Lt_01.SM_Grass_Lt_01       3.31       3.41      10.02            2.32            0.00            7.71
+                                                 StaticMesh /Game/LearningKit_Games/Assets/Environment/Foliage/SM_Grass_Lt_02.SM_Grass_Lt_02       3.31       3.41      12.82            2.32            0.00           10.51
+                                                 StaticMesh /Game/LearningKit_Games/Assets/Environment/Foliage/SM_Grass_Lt_03.SM_Grass_Lt_03       3.31       3.41      22.17            2.82            0.00           19.35
+                                                 StaticMesh /Game/LearningKit_Games/Assets/Environment/Foliage/SM_Grass_Lt_04.SM_Grass_Lt_04       3.31       3.41      33.77            2.82            0.00           30.95
+                                                 StaticMesh /Game/LearningKit_Games/Assets/Environment/Foliage/SM_Grass_Lt_05.SM_Grass_Lt_05       3.31       3.41      33.83            2.82            0.00           31.01
+                                       StaticMesh /Game/LearningKit_Games/Assets/Environment/Islands/SM_FloatingIsland_L.SM_FloatingIsland_L       9.52       9.66    1453.81          396.21            0.00         1057.60
+                                       StaticMesh /Game/LearningKit_Games/Assets/Environment/Islands/SM_FloatingIsland_M.SM_FloatingIsland_M       9.80       9.95     834.36          401.33            0.00          433.03
+                                       StaticMesh /Game/LearningKit_Games/Assets/Environment/Islands/SM_FloatingIsland_S.SM_FloatingIsland_S      10.46      10.60     378.02           96.87            0.00          281.15
+                                          StaticMesh /Game/LearningKit_Games/Assets/Props/Buttons/Button_A/SM_Button_A_Push.SM_Button_A_Push       6.33       6.47      51.40           13.97            0.00           37.43
+                                          StaticMesh /Game/LearningKit_Games/Assets/Props/Buttons/Button_A/SM_Button_A_Ring.SM_Button_A_Ring       6.33       6.47     137.29           43.06            0.00           94.23
+                             StaticMesh /Game/LearningKit_Games/Assets/Props/Collectibles/Common/SM_Collectible_Common.SM_Collectible_Common       4.20       4.34     248.18           44.85            0.00          203.33
+                                    StaticMesh /Game/LearningKit_Games/Assets/Props/Levers/Lever_A/SM_Player_Lever_Base.SM_Player_Lever_Base       4.20       4.34     125.92           37.16            0.00           88.77
+                                StaticMesh /Game/LearningKit_Games/Assets/Props/Levers/Lever_A/SM_Player_Lever_Handle.SM_Player_Lever_Handle       4.20       4.34      66.54           18.71            0.00           47.83
+                                                StaticMesh /Game/LearningKit_Games/Assets/Props/Powerups/Powerup_A/SM_Powerup_A.SM_Powerup_A       4.20       4.34     116.33           42.55            0.00           73.78
+                                   StaticMesh /Game/LearningKit_Games/Assets/Props/PuzzlePieces/PuzzleCube_A/SM_PuzzleCube_A.SM_PuzzleCube_A       4.48       4.62     222.98           43.20            0.00          179.78
+                             StaticMesh /Game/LearningKit_Games/Assets/Props/PuzzlePieces/PuzzleSphere_A/SM_PuzzleSphere_A.SM_PuzzleSphere_A       4.42       4.56     500.83           42.30            0.00          458.52
+                                                         StaticMesh /Game/LearningKit_Robots/StaticMeshes/MergedActors/MA_Robot_c.MA_Robot_C     141.88     142.05    8507.15            1.81            0.00         8505.34
+                                                                              StaticMesh /MediaPlate/SM_MediaPlateScreen.SM_MediaPlateScreen       3.59       3.69       3.66            2.32            0.00            1.34
+
+                                                                                                Class    Count      NumKB      MaxKB   ResExcKB  ResExcDedSysKB  ResExcDedVidKB     ResExcUnkKB
+                                                                                           StaticMesh       85     532.46     542.27   21978.64         2500.02            0.00        19478.62
+
+85 Objects (Total: 0.520M / Max: 0.530M / Res: 21.464M | ResDedSys: 2.441M / ResDedVid: 0.000M / ResUnknown: 19.022M)
+MemReport: End command "obj list class=StaticMesh -alphasort"
+
+MemReport: Begin command "obj list class=Level -alphasort"
+Obj List: class=Level -alphasort
+Objects:
+
+                                                                                                                                      Object      NumKB      MaxKB   ResExcKB  ResExcDedSysKB  ResExcDedVidKB     ResExcUnkKB
+                                                                                                       Level /Game/Main.Main:PersistentLevel       4.96       5.88       0.00            0.00            0.00            0.00
+
+                                                                                                Class    Count      NumKB      MaxKB   ResExcKB  ResExcDedSysKB  ResExcDedVidKB     ResExcUnkKB
+                                                                                                Level        1       4.96       5.88       0.00            0.00            0.00            0.00
+
+1 Objects (Total: 0.005M / Max: 0.006M / Res: 0.000M | ResDedSys: 0.000M / ResDedVid: 0.000M / ResUnknown: 0.000M)
+MemReport: End command "obj list class=Level -alphasort"
+
+MemReport: Begin command "obj list class=StaticMeshComponent -alphasort"
+Obj List: class=StaticMeshComponent -alphasort
+Objects:
+
+                                                                                                                                      Object      NumKB      MaxKB   ResExcKB  ResExcDedSysKB  ResExcDedVidKB     ResExcUnkKB
+                                                 StaticMeshComponent /Game/Blueprints/BP_Pushing.BP_Pushing_C:MA_Building_2x2x4_GEN_VARIABLE       1.77       1.77       0.00            0.00            0.00            0.00
+                   StaticMeshComponent /Game/Blueprints/BP_VerticalMovingPlatform.BP_VerticalMovingPlatform_C:MA_Building_2x2x4_GEN_VARIABLE       1.77       1.77       0.00            0.00            0.00            0.00
+              StaticMeshComponent /Game/LearningKit_Games/Blueprints/BaseClasses/Master_Pickup_BP.Master_Pickup_BP_C:StaticMesh_GEN_VARIABLE       1.77       1.77       0.00            0.00            0.00            0.00
+                                StaticMeshComponent /Game/LearningKit_Games/Blueprints/Interactables/Lever_BP.Lever_BP_C:Handle_GEN_VARIABLE       1.77       1.77       0.00            0.00            0.00            0.00
+                            StaticMeshComponent /Game/LearningKit_Games/Blueprints/Interactables/Lever_BP.Lever_BP_C:StaticMesh_GEN_VARIABLE       1.77       1.77       0.00            0.00            0.00            0.00
+                    StaticMeshComponent /Game/LearningKit_Games/Blueprints/Interactables/PlayerButton_BP.PlayerButton_BP_C:Base_GEN_VARIABLE       1.80       2.27       0.00            0.00            0.00            0.00
+                  StaticMeshComponent /Game/LearningKit_Games/Blueprints/Interactables/PlayerButton_BP.PlayerButton_BP_C:Button_GEN_VARIABLE       1.77       1.77       0.00            0.00            0.00            0.00
+        StaticMeshComponent /Game/LearningKit_Games/Blueprints/Pickups/Collectable_Pickup_BP.Collectable_Pickup_BP_C:StaticMesh_GEN_VARIABLE       1.77       1.77       0.00            0.00            0.00            0.00
+    StaticMeshComponent /Game/LearningKit_Games/Blueprints/Pickups/PowerUp_Pickup_BP_Child.PowerUp_Pickup_BP_Child_C:StaticMesh_GEN_VARIABLE       1.77       1.77       0.00            0.00            0.00            0.00
+                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.BP_LearningKit_PlayerCharacter_2.StaticMeshComponent_1       1.95       1.95       2.58            2.58            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.BP_MovingPlatform_C_1.MA_Building_2x2x4       1.77       1.77       2.51            2.51            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.BP_MovingPlatform_C_2.MA_Building_2x2x4       1.77       1.77       2.51            2.51            0.00            0.00
+                                                        StaticMeshComponent /Game/Main.Main:PersistentLevel.BP_Pushing_C_1.MA_Building_2x2x4       1.77       1.77       3.32            3.32            0.00            0.00
+                                                        StaticMeshComponent /Game/Main.Main:PersistentLevel.BP_Pushing_C_2.MA_Building_2x2x4       1.77       1.77       3.32            3.32            0.00            0.00
+                                                        StaticMeshComponent /Game/Main.Main:PersistentLevel.BP_Pushing_C_3.MA_Building_2x2x4       1.77       1.77       3.32            3.32            0.00            0.00
+                                                        StaticMeshComponent /Game/Main.Main:PersistentLevel.BP_Pushing_C_4.MA_Building_2x2x4       1.77       1.77       3.32            3.32            0.00            0.00
+                                                        StaticMeshComponent /Game/Main.Main:PersistentLevel.BP_Pushing_C_5.MA_Building_2x2x4       1.77       1.77       3.32            3.32            0.00            0.00
+                                                        StaticMeshComponent /Game/Main.Main:PersistentLevel.BP_Pushing_C_6.MA_Building_2x2x4       1.77       1.77       3.32            3.32            0.00            0.00
+                                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.Collectable_Pickup_BP_2.StaticMesh       1.77       1.77       2.51            2.51            0.00            0.00
+                                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.Floor_400x401.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+           FoliageInstancedStaticMeshComponent /Game/Main.Main:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_0      71.09      71.55      70.62           70.62            0.00            0.00
+           FoliageInstancedStaticMeshComponent /Game/Main.Main:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_1      69.91      70.38      69.45           69.45            0.00            0.00
+          FoliageInstancedStaticMeshComponent /Game/Main.Main:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_10      17.55      18.02      16.93           16.93            0.00            0.00
+          FoliageInstancedStaticMeshComponent /Game/Main.Main:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_11      16.79      17.26      16.17           16.17            0.00            0.00
+          FoliageInstancedStaticMeshComponent /Game/Main.Main:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_12      16.98      17.45      16.37           16.37            0.00            0.00
+          FoliageInstancedStaticMeshComponent /Game/Main.Main:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_13      17.74      18.21      17.12           17.12            0.00            0.00
+          FoliageInstancedStaticMeshComponent /Game/Main.Main:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_14      18.52      18.99      17.91           17.91            0.00            0.00
+          FoliageInstancedStaticMeshComponent /Game/Main.Main:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_15      17.96      18.43      17.34           17.34            0.00            0.00
+          FoliageInstancedStaticMeshComponent /Game/Main.Main:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_16      17.18      17.65      16.56           16.56            0.00            0.00
+          FoliageInstancedStaticMeshComponent /Game/Main.Main:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_17      15.84      16.30      15.22           15.22            0.00            0.00
+          FoliageInstancedStaticMeshComponent /Game/Main.Main:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_18      15.62      16.09      15.00           15.00            0.00            0.00
+           FoliageInstancedStaticMeshComponent /Game/Main.Main:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_2      74.41      74.88      73.79           73.79            0.00            0.00
+           FoliageInstancedStaticMeshComponent /Game/Main.Main:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_3      20.06      20.53      19.45           19.45            0.00            0.00
+           FoliageInstancedStaticMeshComponent /Game/Main.Main:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_4      21.04      21.51      20.42           20.42            0.00            0.00
+           FoliageInstancedStaticMeshComponent /Game/Main.Main:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_5      20.84      21.31      20.23           20.23            0.00            0.00
+           FoliageInstancedStaticMeshComponent /Game/Main.Main:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_6      17.38      17.84      16.76           16.76            0.00            0.00
+           FoliageInstancedStaticMeshComponent /Game/Main.Main:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_7      16.20      16.67      15.59           15.59            0.00            0.00
+           FoliageInstancedStaticMeshComponent /Game/Main.Main:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_8      17.18      17.65      16.56           16.56            0.00            0.00
+           FoliageInstancedStaticMeshComponent /Game/Main.Main:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_9      15.45      15.91      14.83           14.83            0.00            0.00
+                                                                       StaticMeshComponent /Game/Main.Main:PersistentLevel.Lever_BP_2.Handle       1.80       1.92       2.51            2.51            0.00            0.00
+                                                                   StaticMeshComponent /Game/Main.Main:PersistentLevel.Lever_BP_2.StaticMesh       1.77       1.80       2.51            2.51            0.00            0.00
+                                                                   StaticMeshComponent /Game/Main.Main:PersistentLevel.PlayerButton_BP2.Base       1.80       2.27       2.51            2.51            0.00            0.00
+                                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.PlayerButton_BP2.Button       1.82       1.96       2.51            2.51            0.00            0.00
+                                                                   StaticMeshComponent /Game/Main.Main:PersistentLevel.PlayerButton_BP3.Base       1.80       2.27       2.51            2.51            0.00            0.00
+                                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.PlayerButton_BP3.Button       1.82       1.96       2.51            2.51            0.00            0.00
+                                                                   StaticMeshComponent /Game/Main.Main:PersistentLevel.PlayerButton_BP4.Base       1.80       2.27       2.51            2.51            0.00            0.00
+                                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.PlayerButton_BP4.Button       1.82       1.96       2.51            2.51            0.00            0.00
+                                                                   StaticMeshComponent /Game/Main.Main:PersistentLevel.PlayerButton_BP5.Base       1.80       2.27       2.51            2.51            0.00            0.00
+                                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.PlayerButton_BP5.Button       1.82       1.96       2.51            2.51            0.00            0.00
+                                                                   StaticMeshComponent /Game/Main.Main:PersistentLevel.PlayerButton_BP6.Base       1.80       2.27       2.51            2.51            0.00            0.00
+                                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.PlayerButton_BP6.Button       1.82       1.96       2.51            2.51            0.00            0.00
+                                                                   StaticMeshComponent /Game/Main.Main:PersistentLevel.PlayerButton_BP7.Base       1.80       2.27       2.51            2.51            0.00            0.00
+                                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.PlayerButton_BP7.Button       1.82       1.96       2.51            2.51            0.00            0.00
+                                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.PlayerButton_BP_2.Base       1.80       2.27       2.51            2.51            0.00            0.00
+                                                                StaticMeshComponent /Game/Main.Main:PersistentLevel.PlayerButton_BP_2.Button       1.82       1.96       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.PowerUp_Pickup_BP_Child2.StaticMesh       1.77       1.77       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.PowerUp_Pickup_BP_Child3.StaticMesh       1.77       1.77       2.51            2.51            0.00            0.00
+                                                   StaticMeshComponent /Game/Main.Main:PersistentLevel.PowerUp_Pickup_BP_Child4_4.StaticMesh       1.77       1.77       2.51            2.51            0.00            0.00
+                                                    StaticMeshComponent /Game/Main.Main:PersistentLevel.PowerUp_Pickup_BP_Child_2.StaticMesh       1.77       1.77       2.51            2.51            0.00            0.00
+                                                        StaticMeshComponent /Game/Main.Main:PersistentLevel.SkyDomeMesh.StaticMeshComponent0       2.55       3.02       2.58            2.58            0.00            0.00
+                                                   StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Clover_01_197.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                   StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Clover_02_200.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                   StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Clover_03_203.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Clover_163.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Clover_165.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Clover_167.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Clover_190.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Clover_192.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Clover_194.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Clover_217.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Clover_224.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Clover_231.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                             StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_CloverFlower_01_169.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                             StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_CloverFlower_02_171.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                             StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_CloverFlower_03_173.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_CloverFlower_178.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_CloverFlower_180.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_CloverFlower_182.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_CloverFlower_206.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_CloverFlower_209.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_CloverFlower_212.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_CloverFlower_219.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_CloverFlower_226.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_CloverFlower_233.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                               StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_L2.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                               StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_L3.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                             StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_L_11.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                       StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_L_Island10.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                       StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_L_Island11.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                       StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_L_Island12.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                       StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_L_Island13.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                       StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_L_Island14.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                       StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_L_Island15.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                       StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_L_Island16.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                        StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_L_Island2.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_L_Island2_0.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                        StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_L_Island6.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                        StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_L_Island7.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                        StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_L_Island8.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_L_Island_150.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                            StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_L_Island_CastleGround.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_M10.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_M11.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_M12.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_M13.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_M14.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_M15.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                            StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_M16_5.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_M17.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_M18.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_M19.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                               StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_M2.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                               StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_M3.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                               StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_M4.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                               StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_M5.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                               StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_M6.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                               StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_M7.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                               StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_M8.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                               StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_M9.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_M_2.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S10.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S11.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S12.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S13.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S14.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S15.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S16.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S17.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S18.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S19.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                               StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S2.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S20.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S21.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S22.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S23.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S24.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S25.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                               StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S3.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                               StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S4.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                               StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S5.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                               StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S6.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                             StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S7_2.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                               StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S8.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                               StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S9.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_FloatingIsland_S_5.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                             StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Flower_Daisy_02_129.StaticMeshComponent0       2.53       2.53       2.73            2.73            0.00            0.00
+                                             StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Flower_Daisy_03_132.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Flower_Daisy_2.StaticMeshComponent0       2.53       2.53       2.73            2.73            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Dk_01_305.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Dk_02_307.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Dk_03_309.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Dk_04_311.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Dk_05_313.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                    StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Dk_316.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                    StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Dk_319.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                    StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Dk_322.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                    StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Dk_325.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                    StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Dk_328.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Lt_01_272.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Lt_02_274.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Lt_03_276.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Lt_04_278.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Lt_05_295.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                    StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Lt_281.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                    StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Lt_286.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                    StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Lt_289.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                    StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Lt_292.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                    StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Grass_Lt_298.StaticMeshComponent0       2.53       2.53       2.58            2.58            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor10_15.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor11_16.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor12_17.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor13_21.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor14_22.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor15.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor16_32.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor17_33.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor18_34.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor19_44.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor2.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor20_48.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor21_59.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor22.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor23_60.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor24_61.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor25_62.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor26_63.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor27_82.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor28_83.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor29.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor3.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor30_84.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor31_85.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor32_86.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor33_93.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor34_94.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor35_95.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor36.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor37.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor38.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor39.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor4.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor40.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor41_137.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor42_138.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor43.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor44.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor45.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor46.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor47.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor48.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor49.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor5.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor50.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor51.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                   StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor52_1.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor53.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor54.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor55.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor56.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor57.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor58_170.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor6.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor7.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor8.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                   StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor9_11.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Floor_2.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                       StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Ramp5.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                       StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Ramp6.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                       StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Ramp7.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                       StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Ramp8.StaticMeshComponent0       2.53       2.53       0.00            0.00            0.00            0.00
+                                                       StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Ramp9.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Ramp_11.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                           StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Roof_Corner_In_13.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                          StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Roof_Corner_Out_15.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Roof_Straight2.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                            StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Roof_Straight_17.StaticMeshComponent0       2.53       2.53       0.00            0.00            0.00            0.00
+                                               StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Wall_Diagonal.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                   StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Wall_Door.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                              StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Wall_Straight5.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Wall_Window.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Wall_Window2.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Wall_Window3.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Wall_Window4.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Wall_Window5.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Wall_Window6.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Wall_Window7.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Kit_Wall_Window8.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                      StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Large_Gate.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Large_Gate_01_3.StaticMeshComponent0       2.53       2.53       3.02            3.02            0.00            0.00
+                                                StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Large_Gate_Frame.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Platform_M2_99.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                     StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Platform_M4.StaticMeshComponent0       2.84       2.84       2.51            2.51            0.00            0.00
+                                                    StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_Powerup_A_35.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                                   StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_PuzzleCube_A2.StaticMeshComponent0       2.54       2.54       2.51            2.51            0.00            0.00
+                                                   StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_PuzzleCube_A3.StaticMeshComponent0       2.54       2.54       2.51            2.51            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_PuzzleCube_A3_1.StaticMeshComponent0       2.54       2.54       2.51            2.51            0.00            0.00
+                                                   StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_PuzzleCube_A4.StaticMeshComponent0       2.54       2.54       2.51            2.51            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_PuzzleCube_A4_2.StaticMeshComponent0       2.54       2.54       2.51            2.51            0.00            0.00
+                                                  StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_PuzzleCube_A_0.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_PuzzleCube_A_93.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_PuzzleSphere_A2.StaticMeshComponent0       2.54       2.54       2.51            2.51            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_PuzzleSphere_A3.StaticMeshComponent0       2.54       2.54       2.51            2.51            0.00            0.00
+                                                 StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_PuzzleSphere_A4.StaticMeshComponent0       2.54       2.54       2.51            2.51            0.00            0.00
+                                                StaticMeshComponent /Game/Main.Main:PersistentLevel.SM_PuzzleSphere_A_8.StaticMeshComponent0       2.53       2.53       2.51            2.51            0.00            0.00
+
+                                                                                                Class    Count      NumKB      MaxKB   ResExcKB  ResExcDedSysKB  ResExcDedVidKB     ResExcUnkKB
+                                                                  FoliageInstancedStaticMeshComponent       19     497.73     506.64     486.30          486.30            0.00            0.00
+                                                                                  StaticMeshComponent      245     618.12     623.47     595.96          595.96            0.00            0.00
+
+264 Objects (Total: 1.090M / Max: 1.104M / Res: 1.057M | ResDedSys: 1.057M / ResDedVid: 0.000M / ResUnknown: 0.000M)
+MemReport: End command "obj list class=StaticMeshComponent -alphasort"
+
