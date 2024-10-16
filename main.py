@@ -1,9 +1,18 @@
 from collections import defaultdict
+from io import StringIO
 
 import pandas as pd
 import streamlit as st
 
 import parsers
+
+# Title of the app
+st.title("Memory Report Visualization")
+upload = st.file_uploader("Pick a file")
+if upload is not None:
+    # To convert to a string based IO:
+    stringio = StringIO(upload.getvalue().decode("utf-8"))
+    print(upload)
 
 file = "memreport_example.memreport"
 fulldoc: list[str] = []
@@ -56,16 +65,13 @@ for line in fulldoc:
 #     parsers.list_texture_parser(data)
 # if category == "r.DumpRenderTargetPoolMemory":
 #     print(parsers.dump_rt_parser(data))
-# cat_data = report_categories["class=StaticMesh"]
-# f_result, summary = parsers.class_parser(cat_data, "class=StaticMesh")
 #
-# Title of the app
-st.title("Memory Report Visualization")
 
 # Iterate through each category
 for category, data in report_categories.items():
     if "class=" in category:
-        st.header(f"Category: {category}")
+        class_name = category.replace("class=", "")
+        st.header(f"Category: {class_name}")
         f_result, summary = parsers.class_parser(data, category)
         df = pd.DataFrame(f_result)
 
@@ -78,7 +84,7 @@ for category, data in report_categories.items():
         st.dataframe(df.style.background_gradient(cmap="viridis"))
 
         # Create an interactive slider to filter data
-        max_mb = st.slider(f"MB Ceiling for {category}", min_value=0, max_value=1024, value=100, key=category)
+        max_mb = st.slider(f"MB Ceiling for {class_name}", min_value=0, max_value=250, value=100, key=class_name)
         filtered_df = df[df["NumKB"] <= max_mb]
 
         # Display the filtered dataframe
@@ -87,3 +93,46 @@ for category, data in report_categories.items():
         # Create a bar chart for the filtered data
         st.write("### Filtered Bar Chart")
         st.bar_chart(filtered_df.set_index("Object")["NumKB"])
+
+    if category == "ListTextures":
+        st.header("Category: ListTextures")
+        texture_data, texture_summary = parsers.list_texture_parser(report_categories["ListTextures"])
+        texture_df = pd.DataFrame(texture_data)
+
+        # Display the dataframe
+        st.write("### Texture Data", texture_df)
+
+        # Filter by VT parameter
+        vt_filter = st.selectbox("Filter by VT parameter", ["All", "YES", "NO"])
+        if vt_filter != "All":
+            texture_df = texture_df[texture_df["VT"] == vt_filter]
+
+        # Display the filtered dataframe
+        st.write("### Filtered Texture Data", texture_df)
+
+        # Calculate resolution and size
+        def calculate_resolution(size_str):
+            width_height_str = size_str.split()[0]
+            width, height = width_height_str.split("x")
+            return int(width.strip()) * int(height.strip())
+
+        def calculate_size(size_str):
+            return int(size_str.split("(")[1].split(" ")[0])
+
+        texture_df["Resolution"] = texture_df["MaxAllowedSize: Width x Height (Size in KB, Authored Bias)"].apply(calculate_resolution)
+        texture_df["Size (KB)"] = texture_df["Current/InMem: Width x Height (Size in KB)"].apply(calculate_size)
+
+        # Sort by resolution and size
+        sorted_by_resolution = texture_df.sort_values(by="Resolution", ascending=False)
+        sorted_by_size = texture_df.sort_values(by="Size (KB)", ascending=False)
+
+        # Display sorted dataframes
+        st.write("### Textures with Biggest Resolution", sorted_by_resolution)
+        st.write("### Textures with Biggest Size", sorted_by_size)
+
+        # Create bar charts for resolution and size
+        st.write("### Bar Chart for Biggest Resolution")
+        st.bar_chart(sorted_by_resolution.set_index("Name")["Resolution"])
+
+        st.write("### Bar Chart for Biggest Size")
+        st.bar_chart(sorted_by_size.set_index("Name")["Size (KB)"])
