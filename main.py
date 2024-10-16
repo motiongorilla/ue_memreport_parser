@@ -8,17 +8,14 @@ import parsers
 
 # Title of the app
 st.title("Memory Report Visualization")
-upload = st.file_uploader("Pick a file")
-if upload is not None:
-    # To convert to a string based IO:
-    stringio = StringIO(upload.getvalue().decode("utf-8"))
-    print(upload)
 
-file = "memreport_example.memreport"
+# File uploader widget
+uploaded_file = st.file_uploader("Choose a file", type=["txt", "memreport"])
+
 fulldoc: list[str] = []
-
-with open(file) as f:
-    fulldoc = f.readlines()
+if uploaded_file is not None:
+    # Read the uploaded file
+    fulldoc = uploaded_file.read().decode("utf-8").splitlines()
 
 report_meta: dict = defaultdict(str)
 report_categories: dict = defaultdict(list)
