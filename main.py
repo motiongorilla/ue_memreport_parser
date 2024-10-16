@@ -56,31 +56,34 @@ for line in fulldoc:
 #     parsers.list_texture_parser(data)
 # if category == "r.DumpRenderTargetPoolMemory":
 #     print(parsers.dump_rt_parser(data))
-cat_data = report_categories["class=StaticMesh"]
-f_result, summary = parsers.class_parser(cat_data, "class=StaticMesh")
-
+# cat_data = report_categories["class=StaticMesh"]
+# f_result, summary = parsers.class_parser(cat_data, "class=StaticMesh")
+#
 # Title of the app
 st.title("Memory Report Visualization")
 
-# Load data (replace this with your actual data loading code)
-data = f_result
-df = pd.DataFrame(data)
+# Iterate through each category
+for category, data in report_categories.items():
+    if "class=" in category:
+        st.header(f"Category: {category}")
+        f_result, summary = parsers.class_parser(data, category)
+        df = pd.DataFrame(f_result)
 
-# Create a bar chart
-st.write("### Bar Chart")
-st.bar_chart(df.set_index("Object")["NumKB"])
+        # Create a bar chart
+        st.write("### Bar Chart")
+        st.bar_chart(df.set_index("Object")["NumKB"])
 
-# Create a heatmap-like table
-st.write("### Heatmap-like Table")
-st.dataframe(df.style.background_gradient(cmap="viridis"))
+        # Create a heatmap-like table
+        st.write("### Heatmap-like Table")
+        st.dataframe(df.style.background_gradient(cmap="viridis"))
 
-# Create an interactive slider to filter data
-max_mb = st.slider("MB Ceiling", min_value=0, max_value=1024, value=100)
-filtered_df = df[df["NumKB"] <= max_mb]
+        # Create an interactive slider to filter data
+        max_mb = st.slider(f"MB Ceiling for {category}", min_value=0, max_value=1024, value=100, key=category)
+        filtered_df = df[df["NumKB"] <= max_mb]
 
-# Display the filtered dataframe
-st.write("### Filtered Data", filtered_df)
+        # Display the filtered dataframe
+        st.write("### Filtered Data", filtered_df)
 
-# Create a bar chart for the filtered data
-st.write("### Filtered Bar Chart")
-st.bar_chart(filtered_df.set_index("Object")["NumKB"])
+        # Create a bar chart for the filtered data
+        st.write("### Filtered Bar Chart")
+        st.bar_chart(filtered_df.set_index("Object")["NumKB"])
