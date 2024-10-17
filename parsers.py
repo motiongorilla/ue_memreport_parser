@@ -192,7 +192,7 @@ def class_parser(data: list[str], class_name: str) -> tuple[pd.DataFrame, dict]:
 
     # building summary for the class
     summary = data[-1].split()
-    class_summary["Objects"] = float(summary[0])
+    class_summary["Objects"] = int(summary[0])
     for entry in data[-1].split("(")[1].split("/"):
         ln = entry.split(":")
         name = ln[0].strip()
