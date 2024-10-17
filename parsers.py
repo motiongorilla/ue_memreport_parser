@@ -91,7 +91,7 @@ def dump_rt_parser(data) -> dict:
 
 
 @st.cache_data
-def list_texture_parser(data: list[str]) -> tuple[dict, dict]:
+def list_texture_parser(data: list[str]) -> tuple[pd.DataFrame, dict]:
     """Parser for ListTextures"""
     import re
 
@@ -144,7 +144,8 @@ def list_texture_parser(data: list[str]) -> tuple[dict, dict]:
 
             summary[key] = {"InMem": in_mem, "OnDisk": on_disk, "Count": count, "CountApplicableToMin": count_applicable_to_min}
 
-    return formatted_output, summary
+    data_df = pd.DataFrame.from_dict(formatted_output)
+    return data_df, summary
 
 
 def particle_system_parser():

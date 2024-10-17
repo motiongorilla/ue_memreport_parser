@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-from streamlit_elements import elements, nivo, mui
+from streamlit_elements import elements, mui, nivo
 
 import parsers
 
@@ -15,6 +15,16 @@ def update_session_state():
     # Delete all the items in Session state
     for key in st.session_state.keys():
         del st.session_state[key]
+
+
+# Function to extract size in KB from the string
+def extract_size_kb(value):
+    return int(value.split("(")[1].split(" ")[0].replace("KB", "").strip())
+
+
+# Function to extract resolution from the string
+def extract_resolution(value):
+    return tuple(map(int, value.split(" ")[0].split("x")))
 
 
 legend = """
@@ -122,69 +132,43 @@ if uploaded_file is not None:
                             )
                 st.divider()
 
-    # if a:
-    #     # Iterate through each category
-    #     for category, data in categories_data.items():
-    #         if "class=" in category:
-    #             # Convert NumKB to numeric values for comparison
-    #             df["NumKB"] = pd.to_numeric(df["NumKB"], errors="coerce")
-    #
-    #             filtered_df = df[df["NumKB"] <= max_mb]
-    #
-    #             # Create a bar chart
-    #             st.write("### Bar Chart")
-    #             st.bar_chart(df.set_index("Object")["NumKB"])
-    #
-    #             # Display the filtered dataframe
-    #             st.write("### Filtered Data", filtered_df)
-    #
-    #             # Create a bar chart for the filtered data
-    #             st.write("### Filtered Bar Chart")
-    #             st.bar_chart(filtered_df.set_index("Object")["NumKB"])
-    #
-    #         if category == "ListTextures":
-    #             st.header("Category: ListTextures")
-    #             texture_data, texture_summary = parsers.list_texture_parser(data)
-    #             texture_df = pd.DataFrame(texture_data)
-    #
-    #             # Display the dataframe
-    #             st.write("### Texture Data", texture_df)
-    #
-    #             # Filter by VT parameter
-    #             vt_filter = st.selectbox("Filter by VT parameter", ["All", "YES", "NO"])
-    #             if vt_filter != "All":
-    #                 texture_df = texture_df[texture_df["VT"] == vt_filter]
-    #
-    #             # Display the filtered dataframe
-    #             st.write("### Filtered Texture Data", texture_df)
-    #
-    #             # Calculate resolution and size
-    #             def calculate_resolution(size_str):
-    #                 width_height_str = size_str.split()[0]
-    #                 width, height = width_height_str.split("x")
-    #                 return int(width.strip()) * int(height.strip())
-    #
-    #             def calculate_size(size_str):
-    #                 return int(size_str.split("(")[1].split(" ")[0])
-    #
-    #             print(texture_df.keys())
-    #             try:
-    #                 texture_df["Resolution"] = texture_df["MaxAllowedSize: Width x Height (Size in KB, Authored Bias)"].apply(calculate_resolution)
-    #             except KeyError:
-    #                 texture_df["Resolution"] = texture_df["Cooked/OnDisk: Width x Height (Size in KB, Authored Bias)"].apply(calculate_resolution)
-    #             texture_df["Size (KB)"] = texture_df["Current/InMem: Width x Height (Size in KB)"].apply(calculate_size)
-    #
-    #             # Sort by resolution and size
-    #             sorted_by_resolution = texture_df.sort_values(by="Resolution", ascending=False)
-    #             sorted_by_size = texture_df.sort_values(by="Size (KB)", ascending=False)
-    #
-    #             # Display sorted dataframes
-    #             st.write("### Textures with Biggest Resolution", sorted_by_resolution)
-    #             st.write("### Textures with Biggest Size", sorted_by_size)
-    #
-    #             # Create bar charts for resolution and size
-    #             st.write("### Bar Chart for Biggest Resolution")
-    #             st.bar_chart(sorted_by_resolution.set_index("Name")["Resolution"])
-    #
-    #             st.write("### Bar Chart for Biggest Size")
-    #             st.bar_chart(sorted_by_size.set_index("Name")["Size (KB)"])
+            if category == "ListTextures" or category.__contains__("listtexture"):
+                st.header("Category: ListTextures")
+                if category not in st.session_state:
+                    f_result, summary = parsers.list_texture_parser(st.session_state.init_data[category])
+                    st.session_state[category] = f_result
+                    st.session_state[f"{category}_sum"] = summary
+
+                texture_df = pd.DataFrame(st.session_state[category])
+
+                st.table(st.session_state[f"{category}_sum"])
+
+                # Add columns for sorting
+                st.session_state[category]["Cooked_Size_KB"] = st.session_state[category][
+                    "Cooked/OnDisk: Width x Height (Size in KB, Authored Bias)"
+                ].apply(extract_size_kb)
+                st.session_state[category]["Cooked_Resolution"] = st.session_state[category][
+                    "Cooked/OnDisk: Width x Height (Size in KB, Authored Bias)"
+                ].apply(extract_resolution)
+                st.session_state[category]["InMem_Size_KB"] = st.session_state[category]["Current/InMem: Width x Height (Size in KB)"].apply(
+                    extract_size_kb
+                )
+                st.session_state[category]["InMem_Resolution"] = st.session_state[category]["Current/InMem: Width x Height (Size in KB)"].apply(
+                    extract_resolution
+                )
+
+
+                on = st.toggle("Sort by resolution in memory")
+
+                if on:
+                    sorted = st.session_state[category].sort_values(
+                        by="InMem_Resolution",
+                        key=lambda x: x.map(lambda res: (int(res[0]) ** 2 + int(res[1]) ** 2) ** (1 / 2)),
+                        ascending=False,
+                    )
+                else:
+                    sorted = st.session_state[category]
+
+                # Display the DataFrame with filters applied
+                st.dataframe(sorted)
+                st.divider()
