@@ -1,4 +1,60 @@
 from collections import defaultdict
+from pathlib import Path
+
+import pandas as pd
+import streamlit as st
+
+
+@st.cache_data
+def init_file(document_lines: list[str]) -> tuple[dict[str, list[str]], dict[str, str]]:
+    """Doing the initial parse to get data by category"""
+    if not document_lines:
+        raise ImportError("No data from file provided!")
+
+    report_meta: dict = defaultdict(str)
+
+    # getting the metadata of the report
+    for mi_line in document_lines[:7]:
+        try:
+            meta_key, value = mi_line.split(":")
+            report_meta[meta_key] = value.strip()
+        except ValueError:
+            print("Couldn't parse metadata of the report.")
+            print(f"Line failed: {mi_line}")
+
+    report_categories: dict = defaultdict(list)
+    report_data: bool = False
+    category_name: str = ""
+
+    for line in document_lines[7:]:
+        if line.strip() == "":
+            continue
+
+        command_start = line.startswith("MemReport: Begin command")
+
+        if line.startswith("MemReport: End command"):
+            report_data = False
+            continue
+
+        if report_data:
+            report_categories[category_name].append(line)
+            continue
+
+        if command_start:
+            category_name = line.split('"')[1].replace('"', "")
+
+            if category_name.find("class=") != -1:
+                category_name = category_name.split("class=")[1].split(" ")[0]
+                category_name = f"class={category_name}"
+
+            if category_name.find("-alphasort") != -1:
+                category_name = category_name.replace("-alphasort", "")
+
+            category_name = category_name.strip()
+            report_data = True
+            continue
+
+    return report_categories, report_meta
 
 
 def particle_mem_parser():
@@ -34,12 +90,13 @@ def dump_rt_parser(data) -> dict:
     return data_dict
 
 
+@st.cache_data
 def list_texture_parser(data: list[str]) -> tuple[dict, dict]:
     """Parser for ListTextures"""
     import re
 
     in_data: list[str] = data[2:-14]
-    columns_raw: str  = data[1]
+    columns_raw: str = data[1]
     columns: list[str] = []
 
     formatted_output: dict = defaultdict(list)
@@ -94,7 +151,8 @@ def particle_system_parser():
     """Parser for ListParticleSystems"""
 
 
-def class_parser(data: list[str], class_name: str) -> tuple[dict[str, list[str | float]], dict]:
+@st.cache_data
+def class_parser(data: list[str], class_name: str) -> tuple[pd.DataFrame, dict]:
     """Parser for various Classes"""
     import math
 
@@ -120,9 +178,16 @@ def class_parser(data: list[str], class_name: str) -> tuple[dict[str, list[str |
         else:
             asset_data = line.split()[1:]
             for i, col in enumerate(columns):
-                value = float(asset_data[i]) / 1024 if col != "Object" else asset_data[i]
+                value = float(asset_data[i]) / 1000 if col != "Object" else asset_data[i]
                 if isinstance(value, float):
                     value = math.ceil(value * 100) / 100
+
+                if col == "Object":
+                    value = Path(value).name
+
+                if col.__contains__("KB"):
+                    col = col.replace("KB", "MB")
+
                 formated_data[col].append(value)
 
     # building summary for the class
@@ -143,4 +208,5 @@ def class_parser(data: list[str], class_name: str) -> tuple[dict[str, list[str |
 
         class_summary[name] = float(value)
 
-    return formated_data, class_summary
+    data_df = pd.DataFrame.from_dict(formated_data)
+    return data_df, class_summary
