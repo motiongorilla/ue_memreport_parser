@@ -1,8 +1,10 @@
 import pandas as pd
 import streamlit as st
+from streamlit_elements import elements, nivo, mui
 
 import parsers
 
+st.set_page_config(layout="wide")
 pd.set_option("styler.render.max_elements", 999_999_999_999)
 
 # Title of the app
@@ -15,13 +17,33 @@ def update_session_state():
         del st.session_state[key]
 
 
+legend = """
+Class columns.
+MaxMB: The maximum memory usage recorded for the object in megabytes.
+NumMB: The current memory usage of the object in megabytes.
+ResExcMB: The memory usage excluding any shared resources in megabytes.
+ResExcDedSysMB: The memory usage excluding dedicated system resources in megabytes.
+ResExcDedVidMB: The memory usage excluding dedicated video resources in megabytes.
+ResExcUnkMB: The memory usage excluding unknown resources in megabytes.
+
+For class total.
+Max: The maximum memory usage recorded in megabytes (MB).
+Res: The memory usage excluding any shared resources in megabytes (MB).
+ResDedSys: The memory usage excluding dedicated system resources in megabytes (MB).
+ResDedVid: The memory usage excluding dedicated video resources in megabytes (MB).
+ResUnknown: The memory usage excluding unknown resources in megabytes (MB).
+"""
+
+with st.expander("See memreport legend"):
+    st.code(legend, language="markdown")
+
 # File uploader widget
 uploaded_file = st.file_uploader("Choose a file", type=["txt", "memreport"], on_change=update_session_state)
 
 
 # Custom function to highlight high values
 def highlight_high_values(val, threshold):
-    color = "yellow" if isinstance(val, (int, float)) and val > threshold else ""
+    color = "orange" if isinstance(val, (int, float)) and val > threshold else ""
     return f"background-color: {color}"
 
 
@@ -50,12 +72,55 @@ if uploaded_file is not None:
                     st.session_state[f"{class_name}_sum"] = summary
 
                 st.table(st.session_state[f"{class_name}_sum"])
-
+                st.write(st.session_state[class_name]["ResExcMB"].sum())
                 # Create an interactive input to filter data
-                max_mb = st.number_input("Size threshold in MB", key=category, value=5)
+                max_mb = st.number_input("Size threshold in MB", key=category, value=5.0)
 
+                col1, col2 = st.columns(2)
                 styled_df = st.session_state[class_name].style.map(lambda x: highlight_high_values(x, max_mb))
-                st.dataframe(styled_df)
+
+                with col1:
+                    st.dataframe(styled_df)
+
+                with col2:
+                    # Prepare data for Nivo pie chart
+                    copy_df = pd.DataFrame(st.session_state[class_name][["Object", "ResExcMB"]])
+                    filtered_df = copy_df[copy_df["ResExcMB"] >= max_mb]
+                    if len(filtered_df) > 200:
+                        st.error("You're going to visualize more than 200 elements. App will become unresponsive. Suggestion to filter assets.")
+                    elif len(filtered_df) < 2:
+                        st.write("Nothing to see here.")
+                    else:
+                        pie_data = filtered_df.rename(columns={"Object": "id", "ResExcMB": "value"})
+                        pie_data["label"] = pie_data["id"]
+                        pie_data = pie_data.to_dict(orient="records")
+                        with elements(class_name), mui.Box(sx={"height": 600}):
+                            nivo.Pie(
+                                data=pie_data,
+                                width=800,
+                                innerRadius=0.3,
+                                padAngle=0.4,
+                                cornerRadius=3,
+                                colors={"scheme": "nivo"},
+                                borderWidth=1,
+                                borderColor={"from": "color", "modifiers": [["darker", 0.2]]},
+                                radialLabelsSkipAngle=10,
+                                radialLabelsTextXOffset=6,
+                                radialLabelsTextColor="#333333",
+                                sliceLabelsSkipAngle=10,
+                                sliceLabelsTextColor="#333333",
+                                theme={
+                                    "background": "#FFFFFF",
+                                    "textColor": "#31333F",
+                                    "tooltip": {
+                                        "container": {
+                                            "background": "#FFFFFF",
+                                            "color": "#000000",
+                                        }
+                                    },
+                                },
+                            )
+                st.divider()
 
     # if a:
     #     # Iterate through each category
