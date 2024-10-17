@@ -5,6 +5,7 @@ import streamlit as st
 
 import parsers
 
+pd.set_option("styler.render.max_elements", 999_999_999_999)
 # Title of the app
 st.title("Memory Report Visualization")
 
@@ -15,6 +16,8 @@ fulldoc: list[str] = []
 if uploaded_file is not None:
     # Read the uploaded file
     fulldoc = uploaded_file.read().decode("utf-8").splitlines()
+    # with open(r"D:\memreport-tool-master\memreport-tool-master\fullrep.memreport") as f:
+    #     fulldoc = f.readlines()
 
     report_meta: dict = defaultdict(str)
     report_categories: dict = defaultdict(list)
@@ -29,8 +32,12 @@ if uploaded_file is not None:
         command_start = line.startswith("MemReport:")
         if not report_command and not command_start:
             # getting the metadata of the report
-            meta_key, value = line.split(":")
-            report_meta[meta_key] = value.strip()
+            try:
+                meta_key, value = line.split(":")
+                report_meta[meta_key] = value.strip()
+            except ValueError:
+                print("Couldn't parse metadata of the report.")
+                print(f"Line failed: {line}")
             continue
 
         if command_start:
@@ -51,7 +58,6 @@ if uploaded_file is not None:
 
         if report_command:
             report_categories[category_name].append(line)
-
     # Iterate through each category
     for category, data in report_categories.items():
         if "class=" in category:
@@ -74,6 +80,7 @@ if uploaded_file is not None:
 
             styled_df = filtered_df.style.applymap(highlight_high_values)
             st.dataframe(styled_df)
+            # pd.set_option("styler.render.max_elements", 1366246)
 
             # Create a bar chart
             st.write("### Bar Chart")
@@ -88,7 +95,7 @@ if uploaded_file is not None:
 
         if category == "ListTextures":
             st.header("Category: ListTextures")
-            texture_data, texture_summary = parsers.list_texture_parser(report_categories["ListTextures"])
+            texture_data, texture_summary = parsers.list_texture_parser(data)
             texture_df = pd.DataFrame(texture_data)
 
             # Display the dataframe
@@ -111,7 +118,10 @@ if uploaded_file is not None:
             def calculate_size(size_str):
                 return int(size_str.split("(")[1].split(" ")[0])
 
-            texture_df["Resolution"] = texture_df["MaxAllowedSize: Width x Height (Size in KB, Authored Bias)"].apply(calculate_resolution)
+            try:
+                texture_df["Resolution"] = texture_df["MaxAllowedSize: Width x Height (Size in KB, Authored Bias)"].apply(calculate_resolution)
+            except KeyError:
+                texture_df["Resolution"] = texture_df["Cooked/OnDisk: Width x Height (Size in KB, Authored Bias)"].apply(calculate_resolution)
             texture_df["Size (KB)"] = texture_df["Current/InMem: Width x Height (Size in KB)"].apply(calculate_size)
 
             # Sort by resolution and size

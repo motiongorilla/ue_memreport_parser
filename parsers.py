@@ -39,13 +39,19 @@ def list_texture_parser(data: list[str]) -> tuple[dict, dict]:
     import re
 
     in_data: list[str] = data[2:-14]
-    columns_raw = data[1]
+    columns_raw: str  = data[1]
     columns: list[str] = []
 
     formatted_output: dict = defaultdict(list)
 
     # Regular expression to match the first two columns and then split by commas
-    pattern = r"(MaxAllowedSize: Width x Height \(Size in KB, Authored Bias\)), (Current/InMem: Width x Height \(Size in KB\)), (.*)"
+    if columns_raw.find("MaxAllowedSize:") != -1:
+        pattern = r"(MaxAllowedSize: Width x Height \(Size in KB, Authored Bias\)), (Current/InMem: Width x Height \(Size in KB\)), (.*)"
+    elif columns_raw.find("Cooked/OnDisk:") != -1:
+        pattern = r"(Cooked/OnDisk: Width x Height \(Size in KB, Authored Bias\)), (Current/InMem: Width x Height \(Size in KB\)), (.*)"
+    else:
+        raise ValueError("There's no pattern to match for texture parser!")
+
     # Use re.match to apply the pattern
     match = re.match(pattern, columns_raw)
     if match:
@@ -53,6 +59,8 @@ def list_texture_parser(data: list[str]) -> tuple[dict, dict]:
         columns = [match.group(1), match.group(2)] + match.group(3).split(", ")
 
     for line in in_data:
+        if line.startswith("Total "):
+            continue
         pattern = re.compile(r",\s*(?![^()]*\))")
         data_values = pattern.split(line)
 
@@ -106,7 +114,8 @@ def class_parser(data: list[str], class_name: str) -> tuple[dict[str, list[str |
                 break
 
         if not is_data:
-            columns = line.split()
+            if columns.__len__() == 0:
+                columns = line.split()
             continue
         else:
             asset_data = line.split()[1:]
