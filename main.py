@@ -157,7 +157,6 @@ if uploaded_file is not None:
                     extract_resolution
                 )
 
-
                 on = st.toggle("Sort by resolution in memory")
 
                 if on:
@@ -171,4 +170,37 @@ if uploaded_file is not None:
 
                 # Display the DataFrame with filters applied
                 st.dataframe(sorted)
-                st.divider()
+                # st.divider()
+
+                import plotly.express as px
+
+                df = st.session_state[category]
+
+                # Format the name of the asset
+                df["Formatted_Name"] = df["Name"].apply(lambda x: x.split("/")[-1])
+
+                # Convert InMem_Size_KB to MB for tooltip display
+                df["InMem_Size_MB"] = df["InMem_Size_KB"] / 1024
+
+                # Create the treemap with additional information in the tooltip
+                fig = px.treemap(
+                    df,
+                    path=["LODGroup", "Formatted_Name"],
+                    values="InMem_Size_KB",
+                    hover_data={
+                        "Name": True,
+                        "Format": True,
+                        "Streaming": True,
+                        "UnknownRef": True,
+                        "VT": True,
+                        "Usage Count": True,
+                        "NumMips": True,
+                        "Uncompressed": True,
+                        "InMem_Size_MB": True,
+                    },
+                )
+
+                fig.update_layout(margin=dict(t=50, l=25, r=25, b=25))
+
+                # Display the treemap in Streamlit
+                st.plotly_chart(fig)
