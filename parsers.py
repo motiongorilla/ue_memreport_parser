@@ -42,6 +42,8 @@ def init_file(document_lines: list[str]) -> tuple[dict[str, list[str]], dict[str
 
         if command_start:
             category_name = line.split('"')[1].replace('"', "")
+            if category_name.__contains__("DumpParticleMem"):
+                continue
 
             if category_name.find("class=") != -1:
                 category_name = category_name.split("class=")[1].split(" ")[0]
@@ -167,8 +169,31 @@ def list_texture_parser(data: list[str]) -> tuple[pd.DataFrame, dict]:
     return data_df, summary
 
 
-def particle_system_parser():
+@st.cache_data
+def particle_system_parser(data: list[str]) -> pd.DataFrame:
     """Parser for ListParticleSystems"""
+    formatted_data: dict[str, list] = {
+        "SizeMB": [],
+        "Name": [],
+        "PSysSizeMB": [],
+        "ModuleSizeMB": [],
+        "ComponentSizeMB": [],
+        "ComponentCount": [],
+        "CompResSizeMB": [],
+        "CompTrueResSizeMB": [],
+    }
+    for line in data[2:-1]:
+        columns = line.split(",")
+        formatted_data["SizeMB"].append(float(columns[0]) / 1048576)
+        formatted_data["Name"].append(columns[1])
+        formatted_data["PSysSizeMB"].append(float(columns[2]) / 1048576)
+        formatted_data["ModuleSizeMB"].append(float(columns[3]) / 1048576)
+        formatted_data["ComponentSizeMB"].append(float(columns[4]) / 1048576)
+        formatted_data["ComponentCount"].append(int(columns[5]))
+        formatted_data["CompResSizeMB"].append(float(columns[6]) / 1048576)
+        formatted_data["CompTrueResSizeMB"].append(float(columns[7]) / 1048576)
+    data_df = pd.DataFrame.from_dict(formatted_data)
+    return data_df
 
 
 @st.cache_data

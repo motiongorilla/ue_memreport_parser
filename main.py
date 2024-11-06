@@ -230,3 +230,10 @@ if uploaded_file is not None:
                 )
                 fig.update_traces(root_color="lightgrey")
                 st.plotly_chart(fig)
+            if category == "ListParticleSystems":
+                st.header("ParticleSystems")
+                if category not in st.session_state:
+                    f_result = parsers.particle_system_parser(st.session_state.init_data[category])
+                    st.session_state[category] = f_result
+                particle_systems_df = pd.DataFrame(st.session_state[category]).set_index("Name")
+                st.dataframe(particle_systems_df, use_container_width=True)
