@@ -204,3 +204,29 @@ if uploaded_file is not None:
 
                 # Display the treemap in Streamlit
                 st.plotly_chart(fig)
+            if category == "ConfigMem":
+                st.header("Category: Config cache memory usage")
+
+                if category not in st.session_state:
+                    f_result = parsers.config_mem_parser(st.session_state.init_data[category])
+                    st.session_state[category] = f_result
+
+                config_mem_df = pd.DataFrame(st.session_state[category])
+                st.dataframe(config_mem_df, use_container_width=True)
+            if category == "r.DumpRenderTargetPoolMemory":
+                st.header("Pooled Render Targets")
+                if category not in st.session_state:
+                    f_result = parsers.dump_rt_parser(st.session_state.init_data[category])
+                    st.session_state[category] = f_result
+
+                rt_pool_df = pd.DataFrame(st.session_state[category]).set_index("Name")
+                st.dataframe(rt_pool_df, use_container_width=True)
+                import plotly.express as px
+
+                fig = px.icicle(
+                    st.session_state[category],
+                    path=[px.Constant("all"), "Name", "Format", "Dimensions"],
+                    values="SizeMB",
+                )
+                fig.update_traces(root_color="lightgrey")
+                st.plotly_chart(fig)

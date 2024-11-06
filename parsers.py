@@ -61,11 +61,23 @@ def particle_mem_parser():
     """Parser for DumpParticleMem"""
 
 
-def config_mem_parser():
+@st.cache_data
+def config_mem_parser(data: list[str]) -> pd.DataFrame:
     """Parser for ConfigMem"""
+    formatted_data: dict = {"FileName": [], "NumMegaBytes": [], "MaxMegaBytes": []}
+
+    for line in data[3:-1]:
+        columns = " ".join(line.split()).split()
+        formatted_data["FileName"].append(columns[0])
+        formatted_data["NumMegaBytes"].append(float(columns[1]) / 1048576)
+        formatted_data["MaxMegaBytes"].append(float(columns[2]) / 1048576)
+
+    data_df = pd.DataFrame.from_dict(formatted_data)
+    return data_df
 
 
-def dump_rt_parser(data) -> dict:
+@st.cache_data
+def dump_rt_parser(data: list[str]) -> pd.DataFrame:
     """Parser for r.DumpRenderTargetPoolMemory"""
     import re
 
@@ -73,21 +85,28 @@ def dump_rt_parser(data) -> dict:
     pattern = re.compile(r"\s*(\d+\.\d+MB)\s+(\d+x\s*\d+(?:x\s*\d+)?)\s+(\dmip\(s\))\s+([^\(]+)\s+\(([^)]+)\)\s+(Unused frames:\s*\d+)")
 
     # Initialize the data dictionary
-    data_dict = {}
+    data_dict = {"Name": [], "SizeMB": [], "Dimensions": [], "Mips": [], "Format": [], "Unused Frames": []}
 
     # Process each line
     for line in data[1:-3]:
         match = pattern.match(line)
         if match:
-            size = match.group(1)
-            dimensions = match.group(2).replace(" ", "")
+            size = match.group(1).replace("MB", "")
+            dimensions = match.group(2).replace(" ", "").split("x")
             mips = match.group(3)
             name = match.group(4).strip()
             format_ = match.group(5)
             unused_frames = match.group(6)
 
-            data_dict[name] = {"Size": size, "Dimensions": dimensions, "Mips": mips, "Format": format_, "Unused Frames": unused_frames}
-    return data_dict
+            data_dict["Name"].append(name)
+            data_dict["SizeMB"].append(float(size))
+            data_dict["Dimensions"].append((dimensions[0], dimensions[1]))
+            data_dict["Mips"].append(mips)
+            data_dict["Format"].append(format_)
+            data_dict["Unused Frames"].append(unused_frames)
+
+    df_data = pd.DataFrame.from_dict(data_dict)
+    return df_data
 
 
 @st.cache_data
